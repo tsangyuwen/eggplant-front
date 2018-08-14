@@ -9,12 +9,9 @@
     right: 0;
     width: 100%;
     text-align:center;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color:#110b0a;
     line-height:30px;
-}
-.fixedsize {
-    font-size: 2.5vw;
 }
 .center {
    text-align:center;
@@ -56,4 +53,12 @@ div {
     margin-right: auto;
     background: rgba(255, 255, 255, 0.3);
     padding: 15px;
+}
+
+.actpic {
+    margin-left:-10%;
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    text-align: center;
 }
