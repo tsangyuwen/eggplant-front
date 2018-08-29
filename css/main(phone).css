@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url(/newbackground/分割1-01.png),url(/newbackground/分割2.png),url(/newbackground/分割3-01.png);
+    background-image: url(../newbackground/分割1-01.png),url(../newbackground/分割2.png),url(../newbackground/分割3-01.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position:left,top;
