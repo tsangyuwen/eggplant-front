@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/registered-2.css">
+    <link rel="stylesheet" href="css/bootstrap(phone).css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
+</head>
+
+<body>
+    LOGO
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="login-box">
+        <div class="size">會員註冊</div>
+        <br />
+        <form class="email-login">
+            <div class="u-form-group">
+                公司名稱&emsp;<input type="text" />&emsp;
+                統一編號&emsp;<input />
+
+            </div>
+            <br />
+            <div class="u-form-group">
+                負責人&emsp;&emsp;<input type="text" placeholder="經濟部公司登記所記載代表人姓名" />&emsp;
+                公司電話&emsp;<input />
+            </div>
+            <br />
+            <div class="u-form-group">
+                聯絡人&emsp;&emsp;<input type="text" />&emsp;
+                聯絡人手機<input />
+            </div>
+            <br />
+            <div id="twzipcode">
+                地址&emsp;&emsp;
+                <script>
+                    $('#twzipcode').twzipcode({
+                        'css': ['county', 'district', 'zipcode']
+                    });
+                </script>
+                &emsp;<input />
+            </div>
+            <br />
+            <div class="r-form-group">
+                <div style="text-align:left">公司簡述</div>
+                <textarea placeholder="請輸入公司經營理念、特色、願景等敘述。">
+                </textarea>
+            </div>
+            <div class="u-form-group">
+                <button style="background-color:#59544f; color:#fff;">註冊</button>
+            </div>
+            <div class="u-form-group">
+                <button>取消</button>
+            </div>
+        </form>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
