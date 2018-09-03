@@ -6,14 +6,13 @@ body {
     position: relative;
     margin: 10px auto;
     width: 650px;
-    height: 560px;
+    height: 540px;
     background-color: #fff;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
     color: #59544f;
-    border-radius: 3px;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
     -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
@@ -63,7 +62,6 @@ body {
         color: #fff;
         border: 1px solid rgba(0,0,0,0.05);
         padding: 12px;
-        border-radius: 2px;
         font-size: 12px;
         text-transform: uppercase;
         margin: 0 3%;
@@ -99,18 +97,21 @@ body {
     margin-bottom: 10px;
 }
 
-    .u-form-group input[type="text"]{
-        width: 230px;
+
+    .u-form-group input[type="text"] {
+        width: 210px;
         height: 30px;
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
-        border-radius: 2px;
         color: #59544f;
         font-size: 1rem;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
+        border-right: none;
+        border-left: none;
+        border-top: none;
     }
 
     .u-form-group input {
@@ -119,12 +120,14 @@ body {
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
-        border-radius: 2px;
         color: #59544f;
         font-size: 1rem;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
+        border-right: none;
+        border-left: none;
+        border-top: none;
     }
 
     .u-form-group input:focus {
@@ -132,15 +135,14 @@ body {
     }
 
     .u-form-group button {
-        width: 480px;
-        height: 40px;
+        width: 210px;
+        height: 45px;
         background-color: #5f0ac7;
         border: none;
         outline: none;
         color: #fff;
         font-size: 14px;
         font-weight: normal;
-        border-radius: 2px;
     }
 
 .forgot-password {
@@ -188,8 +190,6 @@ input {
     outline: none;
     border: 1px solid #ddd;
     padding: 0 10px;
-    border-radius: 2px;
-    color: #59544f;
 }
 
 .r-form-group {
@@ -198,12 +198,11 @@ input {
 }
 
     .r-form-group textarea {
-        width: 550px;
+        width: 540px;
         height: 70px;
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
-        border-radius: 2px;
         color: #59544f;
         font-size: 14px;
     }

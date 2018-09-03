@@ -14,52 +14,39 @@
 </head>
 
 <body>
-    LOGO
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div style="background:#fff; height:50px; margin-bottom:100px;">LOGO</div>
     <div class="login-box">
-        <div class="size">會員註冊</div>
-        <br />
+        <div class="size" style="margin-bottom:20px">會員註冊</div>
         <form class="email-login">
-            <div class="u-form-group">
+            <div class="u-form-group" style="margin-bottom:30px">
                 公司名稱&emsp;<input type="text" />&emsp;
-                統一編號&emsp;<input />
-
+                統一編號&emsp;&emsp;<input />
             </div>
-            <br />
-            <div class="u-form-group">
+            <div class="u-form-group" style="margin-bottom:30px">
                 負責人&emsp;&emsp;<input type="text" placeholder="經濟部公司登記所記載代表人姓名" />&emsp;
-                公司電話&emsp;<input />
+                公司電話&emsp;&emsp;<input />
             </div>
-            <br />
-            <div class="u-form-group">
+            <div class="u-form-group" style="margin-bottom:35px">
                 聯絡人&emsp;&emsp;<input type="text" />&emsp;
-                聯絡人手機<input />
+                聯絡人手機 &ensp;<input />
             </div>
-            <br />
-            <div id="twzipcode">
-                地址&emsp;&emsp;
+            <div id="twzipcode" style="margin-bottom:30px">
+                地址&emsp;&ensp;&ensp;
                 <script>
                     $('#twzipcode').twzipcode({
                         'css': ['county', 'district', 'zipcode']
                     });
                 </script>
-                &emsp;<input />
+                &ensp;<input />
             </div>
-            <br />
             <div class="r-form-group">
-                <div style="text-align:left">公司簡述</div>
+                <div style="text-align:left; margin-left:3px;">公司簡述</div>
                 <textarea placeholder="請輸入公司經營理念、特色、願景等敘述。">
                 </textarea>
             </div>
             <div class="u-form-group">
-                <button style="background-color:#59544f; color:#fff;">註冊</button>
-            </div>
-            <div class="u-form-group">
-                <button>取消</button>
+                <button style="margin-left:5px; margin-right:115px;">註冊</button>
+                <button style="background-color:#c1c0bc; margin-right:5px; color:#59544f;">取消</button>
             </div>
         </form>
     </div>
