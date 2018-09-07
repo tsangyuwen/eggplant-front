@@ -4,9 +4,9 @@ body {
 
 .login-box {
     position: relative;
-    margin: 30px auto;
+    margin: 70px auto;
     width: 900px;
-    height: 1600px;
+    height: 1500px;
     background-color: #fff;
     padding-left: 50px;
     padding-right: 50px;
@@ -114,36 +114,44 @@ body {
         border-left: none;
         border-top: none;
     }
+        .u-form-group input[type="checkbox"] {
+            background:#fff;
+            color:#59544f;
+            border-color:#59544f;
+        }
 
-    .u-form-group input[type="text"] {
-        width: 130px;
-        height: 30px;
-        outline: none;
-        border: 1px solid #ddd;
-        padding: 0 10px;
-        color: #59544f;
-        font-size: 25px;
-        -webkit-transition: all 0.1s linear;
-        -moz-transition: all 0.1s linear;
-        transition: all 0.1s linear;
-        border-right: none;
-        border-left: none;
-        border-top: none;
-    }
+        .u-form-group input[type="text"] {
+            width: 130px;
+            height: 30px;
+            outline: none;
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            color: #59544f;
+            font-size: 25px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+        }
 
     .u-form-group input:focus {
         border-color: #358efb;
     }
 
     .u-form-group button {
-        width: 150px;
-        height: 40px;
+        width: 290px;
+        height: 80px;
         background-color: #5f0ac7;
         border: none;
         outline: none;
         color: #fff;
-        font-size: 14px;
+        font-size: 40px;
         font-weight: normal;
+    }
+    .u-form-group a {
+        font-size: 35px;
     }
 
     .u-form-group a:hover {
