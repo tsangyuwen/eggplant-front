@@ -106,7 +106,7 @@ body {
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #59544f;
-        font-size: 1rem;
+        font-size: 13px;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
@@ -122,7 +122,7 @@ body {
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #59544f;
-        font-size: 1rem;
+        font-size: 13px;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;

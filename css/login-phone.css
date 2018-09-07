@@ -4,9 +4,9 @@ body {
 
 .login-box {
     position: relative;
-    margin: 10px auto;
-    width: 650px;
-    height: 540px;
+    margin: 30px auto;
+    width: 900px;
+    height: 1600px;
     background-color: #fff;
     padding-left: 50px;
     padding-right: 50px;
@@ -95,17 +95,18 @@ body {
 .u-form-group {
     width: 100%;
     margin-bottom: 10px;
+    font-size:35px;
 }
 
-
-    .u-form-group input[type="text"] {
-        width: 210px;
-        height: 30px;
+    .u-form-group input[type="email"],
+    .u-form-group input[type="password"] {
+        width: 520px;
+        height: 45px;
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #59544f;
-        font-size: 12px;
+        font-size: 45px;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
@@ -114,14 +115,14 @@ body {
         border-top: none;
     }
 
-    .u-form-group input {
-        width: 160px;
+    .u-form-group input[type="text"] {
+        width: 130px;
         height: 30px;
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #59544f;
-        font-size: 12px;
+        font-size: 25px;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
@@ -135,14 +136,19 @@ body {
     }
 
     .u-form-group button {
-        width: 210px;
-        height: 45px;
+        width: 150px;
+        height: 40px;
         background-color: #5f0ac7;
         border: none;
         outline: none;
         color: #fff;
         font-size: 14px;
         font-weight: normal;
+    }
+
+    .u-form-group a:hover {
+        color: #5f0ac7;
+        text-decoration: none;
     }
 
 .forgot-password {
@@ -162,49 +168,15 @@ body {
 }
 
 .size {
-    font-size: 23px;
+    font-size: 75px;
 }
 
-.zipcode {
-    width: 80px;
-    height: 20px;
-    color: #59544f;
-}
-
-.county {
-    width: 60px;
-    height: 20px;
-    color: #59544f;
-}
-
-.district {
-    width: 80px;
-    height: 20px;
-    color: #59544f;
-    clear:none;
-}
-
-input {
-    width: 250px;
-    height: 30px;
-    outline: none;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-}
-
-.r-form-group {
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    margin-bottom: 10px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 30px;
 }
-
-    .r-form-group textarea {
-        width: 540px;
-        height: 70px;
-        outline: none;
-        border: 1px solid #ddd;
-        color: #59544f;
-        font-size: 14px;
-        resize: none;
-    }
-
-
