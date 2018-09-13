@@ -1,47 +1,232 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta charset="utf-8" />
+    <title>Welcome 茄子切貨網</title>
 
-  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
-   <link rel="stylesheet" href="css/login.css">
-   <link rel="stylesheet" href="css/bootstrap(phone).css" />
-  
+    <link rel="stylesheet" href="css/bootstrap(phone).css" />
+    <link rel="stylesheet" href="css/main(phone).css" />
 </head>
-
 <body>
-    <div style="background:#fff; height:50px; margin-bottom:70px; margin-left:-20px; margin-right:-20px;"><a href="index.html"><img src="images/LOGO.jpg" width="130" style="padding-left:8px;padding-top:5px;" /></a></div>
-  <div class="login-box">
-      <div class="size" style="margin-bottom:30px">會員登入</div>
-      <form class="email-login">
-          <div class="u-form-group" style="margin-bottom:40px">
-              信箱<input type="email" style="margin-left:40px">
-          </div>
-          <div class="u-form-group" style="margin-bottom:40px">
-              密碼<input type="password" style="margin-left:40px" placeholder="英文字區分大小寫" />
-          </div>
-          <div class="u-form-group" style="margin-bottom:40px">
-              <input type="checkbox" />記住帳號 
-              <a href="forgot.html" style="margin-left:40px" class="forgot-password">忘記密碼?</a>
-          </div>
-          <div class="u-form-group" style="margin-left:5px;">
-              <button>登入</button>
-              <button style="background-color:#c1c0bc; margin-left:40px; color:#59544f;">註冊</button>
-          </div>
-          <hr color="#59544f">
-          <div align="right">
-              <a href="#"><img src="images/fb.png" alt="fb" width="120"></a>
-              <a href="#"><img src="images/google.png" alt="google" width="120"></a>
-          </div>
-      </form>
-  </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-   <script  src="js/index.js"></script></body>
+    <!--Search Bar-->
+    <div class="con">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2></h2>
+                    <div id="custom-search-input">
+                        <div class="input-group">
+                            <input type="text" style="border-right:none; border-color:#ddd; -webkit-box-shadow: 0 0 0 #fff; -moz-box-shadow:0 0 0 #fff;" class="form-control input-lg" placeholder="Search" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" style="background:#fff; color:#59544f; border-left:none; border-color:#ddd;" type="button">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!--Nav-->
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav nav-justified" role="tablist">
+                    <li role="presentation"><a href="#">HOME</a></li>
+                    <li role="presentation"><a href="#">MEN</a></li>
+                    <li role="presentation"><a href="#">WOMEN</a></li>
+                    <li role="presentation"><a href="#">KIDS</a></li>
+                    <li role="presentation"><a href="#">BABY</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Carousel-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="#"><img src="images/1.jpg" alt="..."></a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/2.jpg" alt="..."></a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/3.jpg" alt="..."></a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/4.jpg" alt="..."></a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/5.jpg" alt="..."></a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br /><br /><br />
+        <!--資訊-->
+        <div class="container-fluid">
+            <div class="picpad">
+                <p align=center><a href="#"><img src="images/1.jpg" width="830" height="500" alt="..."></a></p>
+            </div>
+        </div>
+        <br />
+        <!--資訊3-3-->
+        <div class="container-fluid">
+            <div class="picpad">
+                <div class="col-sm-4">
+                    <p align=center><a href="#"><img src="images/1.jpg" width="240" height="280" alt="..."></a></p>
+                </div>
+                <div class="col-sm-4">
+                    <p align=center><a href="#"><img src="images/2.jpg" width="240" height="280" alt="..."></a></p>
+                </div>
+                <div class="col-sm-4">
+                    <p align=center><a href="#"><img src="images/3.jpg" width="240" height="280" alt="..."></a></p>
+                </div>
+            </div>
+        </div>
+        <!--商品資訊2-2-->
+        <br />
+        <div class="container-fluid">
+            <div class="picpad">
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/1.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;"> 這是商品資訊</p>
+                </div>
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/2.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;"> 這是商品資訊</p>
+                </div>
+            </div>
+            <br />
+            <div class="picpad">
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/3.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;"> 這是商品資訊</p>
+                </div>
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/4.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;"> 這是商品資訊</p>
+                </div>
+            </div>
+            <br />
+            <div class="picpad">
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/3.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/4.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+            </div>
+            <br />
+            <div class="picpad">
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/3.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/4.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+            </div>
+            <br />
+            <div class="picpad">
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/3.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+                <div class="col-sm-6">
+                    <p align=center><a href="#"><img src="images/4.jpg" alt="..." width="360" height="420"></a></p>
+                    <p style="text-align:left;">這是商品資訊</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!--活動-->
+        <div class="actpic">
+            <p align=center><a href="#"><img src="images/1.jpg" width="1000" height="800" alt="..."></a></p>
+        </div>
+        <br />
+        <div class="actpic">
+            <p align=center><a href="#"><img src="images/2.jpg" width="1000" height="800" alt="..."></a></p>
+        </div>
+        <br />
+        <div class="actpic">
+            <p align=center><a href="#"><img src="images/3.jpg" width="1000" height="800" alt="..."></a></p>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="row">
+                <div class="12u">
+                    <!-- Contact -->
+                    <section>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
+                            <p style="text-align:left">
+                                <a href="index-phone.html"><span class="label">行動版</span></a>
+                                |
+                                <a href="index-computer.html"><span class="label">電腦版</span></a>
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p style="text-align:right">
+                                <a href="#"><span class="label">關於品牌</span></a>
+                                <a href="#"><span class="label">聯絡我們</span></a>
+                                <a href="#"><span class="label">購物須知</span></a>
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <br /><br /><br />
+                        <p style="font-size:2vw;"><a href="#" style="text-decoration:none;color:white;">2018 &copy; EGGPLANT ALL RIGHTS RESERVED</a></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--fixed-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fixed">
+                    <ul class="nav nav-justified" role="tablist">
+                        <li role="presentation"><a href="index.html"><img src="icon/1點首頁.png" alt="首頁" width="90"></a></li>
+                        <li role="presentation"><a href="#"><img src="icon/2分類.png" alt="分類" width="50"></a></li>
+                        <li role="presentation"><a href="#"><img src="icon/3購物車.png" alt="購物車" width="50"></a></li>
+                        <li role="presentation"><a href="login.html"><img src="icon/4會員管理.png" alt="會員管理" width="50"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
 </html>
