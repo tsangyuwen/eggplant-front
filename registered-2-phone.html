@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/registered-2-phone.css">
+    <link rel="stylesheet" href="css/bootstrap(phone).css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <div class="size" style="margin-left:80px; margin-top:60px; margin-bottom:110px">會員註冊</div>
+        <form class="email-login">
+            <div class="u-form-group" style="margin-bottom:60px">
+                公司名稱&emsp;&emsp;<input type="text" />
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                統一編號&emsp;&emsp;<input />
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                負責人&emsp;&emsp;&emsp;<input type="text" placeholder="經濟部公司登記所記載代表人姓名" />
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                公司電話&emsp;&emsp;<input />
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                聯絡人&emsp;&emsp;&emsp;<input type="text" />
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                聯絡人手機 &ensp;<input />
+            </div>
+            <div id="twzipcode" style="font-size:35px">
+                地址&ensp;&ensp;
+                <script>
+                    $('#twzipcode').twzipcode({
+                        'css': ['county', 'district', 'zipcode']
+                    });
+                </script>
+                <div style="margin-top:20px; margin-bottom:60px">
+                   <input placeholder=""/>
+                </div>
+            </div>
+            <div class="r-form-group">
+                <div style="text-align:left; margin-left:3px;">公司簡述</div>
+                <textarea placeholder="請簡述公司之商品與特色。"></textarea>
+            </div>
+            <div class="u-form-group">
+                <button style="margin-left:5px; margin-right:115px;">註冊</button>
+                <button style="background-color:#c1c0bc; margin-right:5px; color:#59544f;">取消</button>
+            </div>
+        </form>
+    </div>
+    <div class="fixed">
+        <ul class="nav nav-justified" role="tablist">
+            <li role="presentation"><a href="index.html"><img src="icon/1點首頁.png" alt="首頁" width="90"></a></li>
+            <li role="presentation"><a href="#"><img src="icon/2分類.png" alt="分類" width="50"></a></li>
+            <li role="presentation"><a href="#"><img src="icon/3購物車.png" alt="購物車" width="50"></a></li>
+            <li role="presentation"><a href="login.html"><img src="icon/4會員管理.png" alt="會員管理" width="50"></a></li>
+        </ul>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
