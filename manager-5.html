@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/manager-5.css">
+    <link rel="stylesheet" href="css/bootstrap(phone).css" />
+
+</head>
+
+<body>
+    <div style="background:#fff; height:50px; margin-bottom:50px; margin-left:-20px; margin-right:-20px;"><a href="index.html"><img src="images/LOGO.jpg" width="130" style="padding-left:8px;padding-top:5px;" /></a></div>
+    <div class="bg-box">
+        <div class="select" style="margin-bottom:40px">
+            <a href="#" style="margin-right:250px; color:#59544f; border:none;">訂單查詢</a>
+            <a href="#">帳號設定</a>
+        </div>
+        <form class="email-login">
+            <div class="msg" style="margin-bottom:30px">
+                個人資料安全認證
+            </div>
+            <div class="msg" style="margin-bottom:50px">
+                為了保障你的資料安全，必須再次填入密碼驗證。
+            </div>
+            <div class="u-form-group" style="margin-bottom:60px">
+                密碼<input type="password" style="margin-left:40px" placeholder="請輸入登入密碼" />
+            </div>
+            <input type="submit" class="fix-submit" value="送出" onclick= "msg()" style="text-align:center" />
+
+            <script>
+                function msg() {
+                    alert("密碼錯誤");
+                }
+            </script>
+        </form>
+
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

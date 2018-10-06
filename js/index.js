@@ -11,3 +11,7 @@ $("#login-box-link").click(function(){
   $("#login-box-link").addClass("active");
   $("#signup-box-link").removeClass("active");
 });
+
+function msg() {
+    alert("±K½X¿ù»~");
+}

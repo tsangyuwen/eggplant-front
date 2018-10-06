@@ -121,13 +121,15 @@ body {
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #59544f;
-        font-size: 1rem;
+        font-size: 13px;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
         border-right: none;
         border-left: none;
         border-top: none;
+        border-bottom: none;
+        background-color:#fff;
     }
 
     .u-form-group input:focus {
