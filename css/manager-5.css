@@ -24,25 +24,6 @@ body {
     font-size: 13px;
 }
 
-.form-style {
-    height: 30px;
-    width: 50%;
-    outline: none;
-    padding: 0 10px;
-    color: #59544f;
-    font-size: 13px;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-}
-
-    .form-style:focus {
-        border-color: #358efb;
-    }
-
 .u-form-group {
     width: 100%;
     margin-bottom: 10px;
@@ -126,10 +107,7 @@ hr {
 }
 
 @media screen and (min-width: 790px) {
-    #web-head {
-        padding-top: 54px;
-        width: 100%;
-    }
+  
 }
 
 /*smaill*/
@@ -154,8 +132,5 @@ hr {
         font-size: 14px;
         font-weight: normal;
     }
-    #phone-head {
-        padding-top: 107px;
-        width: 100%;
-    }
+   
 }

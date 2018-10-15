@@ -35,25 +35,6 @@ body {
     margin: 10px auto;
 }
 
-.form-style {
-    height: 30px;
-    width: 50%;
-    outline: none;
-    padding: 0 10px;
-    color: #59544f;
-    font-size: 13px;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-}
-
-    .form-style:focus {
-        border-color: #358efb;
-    }
-
 .select {
     font-size: 18px;
     text-align: center;
@@ -118,10 +99,7 @@ hr {
 
 @media screen and (min-width: 790px) {
 
-    #web-head {
-        padding-top: 54px;
-        width: 100%;
-    }
+  
 }
 
 /*smaill*/
@@ -136,8 +114,5 @@ hr {
         height: 600px;
         width: 90%;
     }
-    #phone-head {
-        padding-top: 107px;
-        width: 100%;
-    }
+  
 }

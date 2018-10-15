@@ -20,26 +20,6 @@ body {
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
 }
 
-.form-style {
-    height: 30px;
-    width: 50%;
-    outline: none;
-    padding: 0 10px;
-    color: #59544f;
-    font-size: 13px;
-    border: 1px solid #ddd;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-}
-
-    .form-style:focus {
-        border-color: #358efb;
-    }
-
 .u-form-group {
     width: 100%;
     margin-bottom: 10px;
@@ -117,15 +97,6 @@ body {
         border-width: 0px 0px 2px;
     }
 
-tbody {
-    text-align: left;
-    border: none;
-    text-decoration: none;
-    border: none;
-    border-spacing: 0;
-    border-collapse: collapse
-}
-
 table {
     border-spacing: 0;
     border-collapse: collapse
@@ -145,10 +116,7 @@ hr {
 }
 
 @media screen and (min-width: 790px) {
-    #web-head {
-        padding-top: 54px;
-        width: 100%;
-    }
+   
 }
 
 /*smaill*/
@@ -174,8 +142,5 @@ hr {
         font-size: 14px;
         font-weight: normal;
     }
-    #phone-head {
-        padding-top: 107px;
-        width: 100%;
-    }
+  
 }

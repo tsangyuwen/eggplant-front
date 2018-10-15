@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/shoppingcart-4.css">
+    <link rel="stylesheet" href="css/bootstrap(phone).css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
+</head>
+
+<body>
+    <div class="banner"><a href="index.html"><img src="images/LOGO.jpg" width="130" style="padding-left:8px;padding-top:5px;" /></a></div>
+    <div class="login-box">
+        <img src="images/步驟2.png" class="process-img" />
+        <div class="mobile_banner"><p>填寫資料</p></div>
+        <form class="email-login">
+            <div class="u-form-group">
+                <div class="email">信箱</div>
+                <div class="email-msg">B10423023@gmail.com</div>
+            </div>
+            <div class="u-form-group">
+                聯絡人<input type="text" class="man-fix" />
+            </div>
+            <div class="u-form-group float">
+                市話<input type="text" class="phone-fix" />
+            </div>
+            <div class="u-form-group">
+                手機<input type="text" class="cell-fix" />
+            </div>
+            <div id="twzipcode" class="address-fix">
+                地址
+                <script>
+                    $('#twzipcode').twzipcode({
+                        'css': ['county', 'district', 'zipcode']
+                    });
+                </script>
+            </div>
+            <div class="u-form-group">
+                <input placeholder="請輸入地址" />
+            </div>
+            <div class="u-form-group">
+                統一編號<input type="text" class="num-fix" />
+            </div>
+            <hr />
+            <div class="u-form-group">
+                <div class="total">總共200件商品</div>
+                <div class="title">商品金額</div>
+                <div class="title-msg">$ 20,000</div>
+            </div>
+            <div class="u-form-group">
+                <button class="undo_button" style="border-style: solid; border-color: #9b3af6;">←&nbsp;上一步</button>
+                <button class="finish_button">確認送出</button>
+            </div>
+        </form>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
