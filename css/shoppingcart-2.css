@@ -1,0 +1,203 @@
+body {
+    font-family: Arial,'Microsoft JhengHei';
+    background-color: #e6caff;
+}
+
+.bg_box {
+    position: relative;
+    margin: 10px auto;
+    margin-top: 80px;
+    width: 650px;
+    height: 480px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #59544f;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+
+.web_banner {
+    background-color:#fff; 
+    height:50px;
+}
+
+.Logo {
+    padding-left:8px;
+    padding-top:5px;
+    height:auto;
+    max-width: 100%;" 
+}    
+
+.process-img {
+    width:500px;
+    height:auto;
+    margin:auto;
+    display:block;
+    margin-top:10px;
+    margin-left:25px;
+}
+
+.radio {
+    position: relative;
+    margin-top: 23px;
+    margin-left: 110px;
+    width: 60%;
+    height: 9%;
+    border-style: solid;
+    border-color: #9b3af6;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 3%;
+    color: #59544f;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hr_style {
+    border-color: #59544f;
+    border-style: solid;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.quantity {
+    position: absolute;
+    color: #848378;
+    margin-top: 50px;
+    left: 46%;
+    font-size: 15px;
+}
+
+.amount {
+    position: absolute;
+    color: #59544f;
+    margin-top: 50px;
+    left: 65%;
+    font-size: 15px;
+}
+
+.undo_button {
+    position: absolute;
+    width: 15%;
+    height: 6%;
+    top: 88%;
+    left: 13%;
+    background-color: #ffffff;
+    color: #9b3af6;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.undo_button:focus {
+    outline: 0;
+}
+
+.finish_button {
+    position: absolute;
+    width: 15%;
+    height: 6%;
+    top: 88%;
+    left: 71%;
+    background-color: #9b3af6;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.finish_button:focus {
+    outline: 0;
+}
+
+/* web version */
+@media screen and (min-width: 790px) {
+
+    .mobile_banner {
+        display: none;
+    }    
+    
+    .card_radio {
+        margin-top: 29px;
+    }
+
+    .webatm_radio {
+        margin-top: 33px;
+    }
+
+}
+
+/* phone version */
+@media screen and (max-width: 789px) {
+
+    .web_banner {
+        display: none;
+    }
+
+    .mobile_banner {
+        background-color:#5f0ac7;
+        color: #ffffff;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px; 
+        height:50px;
+    }
+    
+    .bg_box {
+        margin-top: 0px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 600px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .process-img {
+        display: none;
+    }
+
+    .radio {
+        margin-top: 55px;
+        margin-left: 1px;
+        width: 100%;
+        height: 10%;
+    }
+
+    .card_radio {
+        margin-top: 30px;
+    }
+    
+    .webatm_radio {
+        margin-top: 30px;
+    }
+
+    .quantity {
+        margin-top: 75px;
+        left: 20%;
+    }
+    
+    .amount {
+        margin-top: 75px;
+        left: 52%;
+    }
+
+    .undo_button {
+        width: 28%;
+        left: 7%;
+    }
+    
+    .finish_button {
+        width: 28%;
+        left: 65%;
+    }
+    
+}

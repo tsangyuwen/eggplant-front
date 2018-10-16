@@ -62,14 +62,6 @@ body {
         border-width: 0px 0px 2px;
     }
 
-tbody {
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-spacing: 0;
-    border-collapse: collapse
-}
 
 table {
     border: none;
