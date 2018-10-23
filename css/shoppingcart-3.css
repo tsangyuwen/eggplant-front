@@ -182,7 +182,7 @@ body {
     }
 
     .cross {
-        margin-left: 380px;
+        margin-left: 325px;
         margin-bottom: -15px;
     }
 
@@ -208,29 +208,29 @@ body {
     }
 
     .quantity {
-        margin-top: 100px;
-        margin-left: 80px;
-        font-size: 13pt;
+        margin-top: 90px;
+        margin-left: 65px;
+        font-size: 15px;
     }
     
     .amount {
-        margin-top: -41px;
-        margin-left: 220px;
-        font-size: 13pt;
+        margin-top: -38px;
+        margin-left: 180px;
+        font-size: 15px;
     }
 
     .undo_button {
-        width: 120px;
-        height: 40px;
+        width: 105px;
+        height: 37px;
         margin-bottom: 30px;
-        font-size: 14pt;
+        font-size: 14px;
     }
     
     .finish_button {
-        width: 120px;
-        height: 40px;
+        width: 105px;
+        height: 37px;
         margin-bottom: 30px;
-        font-size: 14pt;
+        font-size: 14px;
     }
     
 }
