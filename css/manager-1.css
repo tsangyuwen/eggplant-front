@@ -79,6 +79,10 @@ tr td{
         color: #59544f;
     }
 
+a {
+    color:#fff;
+}
+
 span {
     background-color:#59544f;
 }
