@@ -33,14 +33,14 @@ audio, canvas, progress, video {
     display: none
 }
 
-    a:link {
-        text-decoration: none;
-        color: #59544f;
-    }
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
 
     a:active, a:hover {
         text-decoration: none;
-        color: #5f0ac7;
+        color:#fff;
     }
 
 abbr[title] {
@@ -1123,7 +1123,7 @@ a {
 }
 
     a:hover, a:focus {
-        color: #2a6496;
+        color: #fff;
         text-decoration: underline
     }
 
