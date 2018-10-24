@@ -5,10 +5,8 @@ body {
 
 .bg_box {
     position: relative;
-    margin: 10px auto;
-    margin-top: 80px;
+    margin: 80px auto;
     width: 650px;
-    height: 480px;
     background-color: #fff;
     padding-left: 50px;
     padding-right: 50px;
@@ -27,7 +25,7 @@ body {
     padding-left:8px;
     padding-top:5px;
     height:auto;
-    max-width: 100%;" 
+    max-width: 100%;
 }    
 
 .process-img {
@@ -47,6 +45,7 @@ body {
     height: 9%;
     border-style: solid;
     border-color: #9b3af6;
+    border-width: 1.2px;
     text-align: left;
     line-height: 40px;
     padding-left: 3%;
@@ -58,35 +57,34 @@ body {
 .hr_style {
     border-color: #59544f;
     border-style: solid;
-    width: 100%;
+    width: 80%;
     margin-top: 30px;
 }
 
 .quantity {
     position: absolute;
     color: #848378;
-    margin-top: 50px;
-    left: 46%;
+    margin-top: 10px;
+    left: 43%;
     font-size: 15px;
 }
 
 .amount {
     position: absolute;
     color: #59544f;
-    margin-top: 50px;
-    left: 65%;
+    margin-top: 10px;
+    left: 62%;
     font-size: 15px;
 }
 
 .undo_button {
-    position: absolute;
-    width: 15%;
-    height: 6%;
-    top: 88%;
-    left: 13%;
+    width: 100px;
+    height: 30px;
+    margin-top: 60px;
+    margin-left: 30px;
     background-color: #ffffff;
     color: #9b3af6;
-    border: none;
+    border-width: 1.2px;
     cursor: pointer;
     text-align: center;
     font-size: 14px;
@@ -97,11 +95,10 @@ body {
 }
 
 .finish_button {
-    position: absolute;
-    width: 15%;
-    height: 6%;
-    top: 88%;
-    left: 71%;
+    width: 100px;
+    height: 30px;
+    margin-top: 60px;
+    margin-left: 280px;
     background-color: #9b3af6;
     color: #ffffff;
     outline: none;
@@ -143,18 +140,16 @@ body {
         background-color:#5f0ac7;
         color: #ffffff;
         text-align: center;
-        line-height: 50px;
-        font-size: 20px; 
-        height:50px;
+        line-height: 65px;
+        font-size: 19px; 
+        height:60px;
+        margin: 0px 25px;
     }
     
     .bg_box {
+        margin: 35px 25px;
         margin-top: 0px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
         width: 90%;
-        height: 600px;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 20px;
@@ -169,7 +164,8 @@ body {
         margin-top: 55px;
         margin-left: 1px;
         width: 100%;
-        height: 10%;
+        height: 20%;
+        font-size: 19px;
     }
 
     .card_radio {
@@ -180,24 +176,37 @@ body {
         margin-top: 30px;
     }
 
+    .hr_style {
+        width: 100%;
+        margin-top: 60px;
+    }
+
     .quantity {
-        margin-top: 75px;
-        left: 20%;
+        margin-top: 40px;
+        left: 22%;
+        font-size: 19px;
     }
     
     .amount {
-        margin-top: 75px;
-        left: 52%;
+        margin-top: 40px;
+        left: 50%;
+        font-size: 19px;
     }
 
     .undo_button {
-        width: 28%;
-        left: 7%;
+        margin-left: 5px;
+        width: 32%;
+        height: 40px;  
+        font-size: 19px;
     }
     
     .finish_button {
-        width: 28%;
-        left: 65%;
+        margin-top: 150px;
+        margin-left: 123px;
+        margin-bottom: 10px;
+        width: 32%;
+        height: 40px; 
+        font-size: 19px;
     }
     
 }
