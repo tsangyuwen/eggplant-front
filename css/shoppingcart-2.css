@@ -178,17 +178,17 @@ body {
 
     .hr_style {
         width: 100%;
-        margin-top: 45px;
+        margin-top: 35px;
     }
 
     .quantity {
-        margin-top: 25px;
+        margin-top: 15px;
         left: 5%;
         font-size: 18px;
     }
     
     .amount {
-        margin-top: 25px;
+        margin-top: 15px;
         left: 45%;
         font-size: 18px;
     }
@@ -201,7 +201,7 @@ body {
     }
     
     .finish_button {
-        margin-top: 100px;
+        margin-top: 90px;
         margin-left: 43px;
         margin-bottom: 10px;
         width: 40%;
