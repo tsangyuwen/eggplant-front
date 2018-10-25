@@ -3,12 +3,10 @@ body {
     background-color: #e6caff;
 }
 
-.bg-box {
+.bg_box {
     position: relative;
-    margin: 10px auto;
-    margin-top: 80px;
+    margin: 80px auto;
     width: 650px;
-    height: 480px;
     background-color: #fff;
     padding-left: 50px;
     padding-right: 50px;
@@ -36,13 +34,13 @@ body {
     margin:auto;
     display:block;
     margin-top:10px;
-    margin-left:25px;
+    margin-left:20px;
 }
 
 .content {
-    position: absolute;
-    margin-top: 230px;
-    margin-left: -45px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: -1px;
     width: 100%;
     text-align: center;
     color: #59544f;
@@ -50,18 +48,19 @@ body {
 }
 
 .cart {
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 225px;
+    position: relative;
+    margin-top: 95px;
+    margin-left: 230px;
     width: 15%;
 }
 
 .button {
-    position: absolute;
-    width: 20%;
-    height: 6%;
-    margin-top: 290px;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
     margin-left: 215px;
+    margin-bottom: 50px;
     background-color: #59544f;
     outline: none;
     border: none;
@@ -95,18 +94,16 @@ body {
         background-color:#5f0ac7;
         color: #ffffff;
         text-align: center;
-        line-height: 50px;
-        font-size: 20px; 
-        height:50px;
+        line-height: 40px;
+        font-size: 14px; 
+        height:40px;
+        margin: 0px 18px;
     }
     
-    .bg-box {
+    .bg_box {
+        margin: 35px 18px;
         margin-top: 0px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
         width: 90%;
-        height: 600px;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 20px;
@@ -118,22 +115,23 @@ body {
     }
 
     .content {
-        margin-top: 250px;
-        margin-left: -20px;
-        font-size: 23px;
+        margin-top: 30px;
+        margin-left: -1px;
+        font-size: 14px;
     }
     
     
     .cart {
         margin-top: 130px;
-        margin-left: 130px;
+        margin-left: 115px;
         width: 22%;
     }
     
     .button {
-        width: 50%;
-        margin-top: 330px;
-        margin-left: 75px;
-        font-size: 23px;
+        width: 40%;
+        margin-top: 10px;
+        margin-left: 91px;
+        margin-bottom: 150px;
+        font-size: 14px;
     }
 }
