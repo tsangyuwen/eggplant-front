@@ -141,7 +141,7 @@ body {
         color: #ffffff;
         text-align: center;
         line-height: 50px;
-        font-size: 18px; 
+        font-size: 15px; 
         height:50px;
         margin: 0px 18px;
     }
@@ -165,7 +165,7 @@ body {
         margin-left: 1px;
         width: 100%;
         height: 45%;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .card_radio {
@@ -183,30 +183,30 @@ body {
 
     .quantity {
         margin-top: 15px;
-        left: 5%;
-        font-size: 18px;
+        left: 32%;
+        font-size: 15px;
     }
     
     .amount {
         margin-top: 15px;
-        left: 45%;
-        font-size: 18px;
+        left: 62%;
+        font-size: 15px;
     }
 
     .undo_button {
         margin-left: 5px;
-        width: 40%;
-        height: 40px;  
-        font-size: 18px;
+        width: 32%;
+        height: 36px;  
+        font-size: 15px;
     }
     
     .finish_button {
-        margin-top: 100px;
-        margin-left: 43px;
-        margin-bottom: 10px;
-        width: 40%;
-        height: 40px; 
-        font-size: 18px;
+        margin-top: 120px;
+        margin-left: 115px;
+        margin-bottom: 20px;
+        width: 32%;
+        height: 36px; 
+        font-size: 15px;
     }
     
 }
