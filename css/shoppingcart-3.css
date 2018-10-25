@@ -5,8 +5,7 @@ body {
 
 .bg_box {
     position: relative;
-    margin: 10px auto;
-    margin-top: 80px;
+    margin: 80px auto;
     width: 650px;
     background-color: #fff;
     padding-left: 50px;
@@ -86,26 +85,29 @@ body {
 
 
 .quantity {
+    position: absolute;
     color: #848378;
-    margin-top: 30px;
-    margin-left: 200px;
+    margin-top: 25px;
+    left: 47%;
     font-size: 15px;
 }
 
 .amount {
+    position: absolute;
     color: #59544f;
-    margin-top: -38px;
-    margin-left: 320px;
+    margin-top: 25px;
+    left: 66%;
     font-size: 15px;
 }
 
 .undo_button {
     width: 100px;
     height: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
+    margin-left: 30px;
     background-color: #ffffff;
     color: #9b3af6;
-    border-width: 1px;
+    border-width: 1.2px;
     cursor: pointer;
     text-align: center;
     font-size: 14px;
@@ -118,8 +120,9 @@ body {
 .finish_button {
     width: 100px;
     height: 30px;
-    float: right;
-    margin-top: 50px;
+    margin-top: 90px;
+    margin-left: 280px;
+    margin-bottom: 20px;
     background-color: #9b3af6;
     color: #ffffff;
     outline: none;
@@ -156,16 +159,14 @@ body {
         background-color:#5f0ac7;
         color: #ffffff;
         text-align: center;
-        line-height: 50px;
-        font-size: 20px; 
-        height:50px;
+        line-height: 40px;
+        font-size: 14px; 
+        height:40px;
     }
     
     .bg_box {
+        margin: 35px 18px;
         margin-top: 0px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
@@ -177,20 +178,19 @@ body {
         border-top:none;
         border-right: none;
         border-left: none;
-        margin: 10px 0px;
-        height: 185px;
+        margin: -20px 0px;
+        margin-bottom: 40px;
+        height: 160px;
     }
 
     .cross {
-        margin-left: 325px;
-        margin-bottom: -15px;
+        margin-left: 270px;
     }
 
     .pro_img {
-        width: 100px;
+        width: 90px;
         height: auto;
         margin-left: 0;
-        margin-top: 10px;
     }
 
     .web_text {
@@ -198,9 +198,10 @@ body {
     }
 
     .mobile_text {
-        margin-top: -150px;
-        margin-left: 130px;
-        font-size: 15px;
+        margin-top: -135px;
+        margin-left: 110px;
+        font-size: 14px;
+        line-height: 15px;
     }
     
     .process-img {
@@ -208,28 +209,29 @@ body {
     }
 
     .quantity {
-        margin-top: 90px;
-        margin-left: 65px;
-        font-size: 15px;
+        margin-top: 15px;
+        left: 22%;
+        font-size: 14px;
     }
     
     .amount {
-        margin-top: -38px;
-        margin-left: 180px;
-        font-size: 15px;
+        margin-top: 15px;
+        left: 54%;
+        font-size: 14px;
     }
 
     .undo_button {
-        width: 105px;
-        height: 37px;
-        margin-bottom: 30px;
+        margin-left: 5px;
+        width: 32%;
+        height: 36px;  
         font-size: 14px;
     }
     
     .finish_button {
-        width: 105px;
-        height: 37px;
-        margin-bottom: 30px;
+        margin-top: 110px;
+        margin-left: 94px;
+        width: 32%;
+        height: 36px; 
         font-size: 14px;
     }
     
