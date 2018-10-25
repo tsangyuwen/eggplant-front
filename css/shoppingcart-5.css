@@ -3,6 +3,19 @@ body {
     margin: 0;
 }
 
+.bg-box {
+    position: relative;
+    margin: 80px auto;
+    width: 650px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #59544f;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+
 .process-img {
     width:500px;
     height:auto;
@@ -13,15 +26,20 @@ body {
 
 
 .fix-submit {
-    width: 110px;
-    height: 30px;
     background-color: #9b3af6;
-    border: none;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 210px;
+    margin-bottom: 55px;
     outline: none;
-    color: #fff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 0%;
     font-size: 14px;
-    font-weight: normal;
-    text-align:center;
 }
 
 .email-login {
@@ -38,8 +56,8 @@ table {
     border-spacing: 0;
     border-collapse: collapse; 
     margin-left:130px;
-    margin-top:70px;
-    margin-bottom:70px;
+    margin-top:40px;
+    margin-bottom:20px;
 }
 
 tr td{
@@ -68,50 +86,29 @@ hr {
     .mobile_banner {
       display: none;
     }
-
-    .bg-box {
-        position: relative;
-        margin: 10px auto;
-        margin-top: 60px;
-        width: 650px;
-        height: 550px;
-        background-color: #fff;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        color: #59544f;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-    }
 }
 
 /*smaill*/
 
 @media screen and (max-width: 789px) {
     .bg-box {
-        position: relative;
-        top: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 5%;
+        margin: 35px 18px;
+        margin-top: 0px;
         width: 90%;
-        height: 600px;
-        background-color: #ffffff;
-        color: #59544f;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(216, 181, 181, 0.33);
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     .mobile_banner {
         background-color: #5f0ac7;
         color: #ffffff;
         text-align: center;
-        line-height: 50px;
-        font-size: 23px;
-        height: 50px;
+        line-height: 40px;
+        font-size: 14px;
+        height: 40px;
+        margin: 0px 18px;
     }
 
     .process-img {
@@ -119,15 +116,12 @@ hr {
     }
 
 
-    .login-submit {
-        width: 35%;
-        height: 40px;
-        background-color: #5f0ac7;
-        border: none;
-        outline: none;
-        color: #fff;
+    .fix-submit {
+        width: 40%;
+        margin-top: 65px;
+        margin-left: 84px;
+        margin-bottom: 47px;
         font-size: 14px;
-        font-weight: normal;
     }
 
     table {
@@ -135,8 +129,8 @@ hr {
         border-collapse: collapse;
         margin-left: 10%;
         margin-right:10%;
-        margin-top: 120px;
-        margin-bottom: 70px;
+        margin-top: 50px;
+        margin-bottom: 45px;
     }
 
     tr td {

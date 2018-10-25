@@ -3,6 +3,19 @@ body {
     margin:0;
 }
 
+.bg-box {
+    position: relative;
+    margin: 80px auto;
+    width: 650px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #59544f;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+
 .email-login {
     position: relative;
     float: left;
@@ -23,7 +36,7 @@ body {
         height: 30px;
         outline: none;
         border: 1px solid #ddd;
-        padding: 0 10px;
+        padding: 0 5px;
         color: #59544f;
         font-size: 14px;
         -webkit-transition: all 0.1s linear;
@@ -39,7 +52,7 @@ body {
         height: 30px;
         outline: none;
         border: 1px solid #ddd;
-        padding: 0 10px;
+        padding: 0 5px;
         color: #59544f;
         font-size: 14px;
         -webkit-transition: all 0.1s linear;
@@ -88,30 +101,12 @@ input {
 .email {
     font-size: 14px;
     float: left;
-    margin-left: 62px;
+    margin-left: 90px;
 }
 
 .email-msg {
     font-size: 14px;
-    margin-right: 230px;
-}
-
-.total {
-    font-size: 14px;
-    float: left;
-    margin-left:230px;
-    margin-right:50px;
-    color:#848378;
-}
-
-.title {
-    font-size: 14px;
-    float: left;
-   
-}
-
-.title-msg {
-    font-size: 14px;   
+    margin-left: 155px;
 }
 
 hr {
@@ -128,13 +123,13 @@ hr {
 }
 
 .undo_button {
-    position: absolute;
-    width: 15%;
-    height: 6%;
-    left: 13%;
+    width: 100px;
+    height: 30px;
+    margin-top: 90px;
+    margin-left: 30px;
     background-color: #ffffff;
     color: #9b3af6;
-    border: none;
+    border-width: 1.2px;
     cursor: pointer;
     text-align: center;
     font-size: 14px;
@@ -145,10 +140,11 @@ hr {
     }
 
 .finish_button {
-    position: absolute;
-    width: 15%;
-    height: 6%;
-    left: 71%;
+    width: 100px;
+    height: 30px;
+    margin-top: 90px;
+    margin-left: 280px;
+    margin-bottom: 20px;
     background-color: #9b3af6;
     color: #ffffff;
     outline: none;
@@ -162,6 +158,23 @@ hr {
         outline: 0;
     }
 
+.total {
+    float: left;
+    position: absolute;
+    color: #848378;
+    margin-top: 10px;
+    left: 49%;
+    font-size: 14px;
+}
+
+.title {
+    float: left;
+    position: absolute;
+    color: #59544f;
+    margin-top: 10px;
+    left: 68%;
+    font-size: 14px;
+}
 
 @media screen and (min-width: 790px) {
 
@@ -169,35 +182,29 @@ hr {
         display: none;
     }
 
-    .login-box {
-        position: relative;
-        margin: 10px auto;
-        margin-top: 50px;
-        width: 650px;
-        height: 610px;
-        background-color: #fff;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        color: #59544f;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-    }
-
-
     .process-img {
         width: 500px;
         height: auto;
         margin: auto;
         display: block;
         margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .local-3 {
+        margin-left:90px;
+    }
+
+    .local-4 {
+        margin-left:87px;
+    }
+
+    .local-address {
+        margin-left: 88px;
     }
 
     .man-fix {
-        margin-left: 15px;
-        margin-right: 230px;
+        margin-left: 19px;
     }
 
     .cell-fix {
@@ -205,7 +212,7 @@ hr {
     }
 
     .phone-fix {
-        margin-left: 30px;
+        margin-left: 35px;
         margin-right: 28px;
     }
 
@@ -220,7 +227,7 @@ hr {
     .float {
         float:left;
         width:auto;
-        margin-left:60px;
+        margin-left:89px;
     }
     
 }
@@ -237,28 +244,40 @@ hr {
         display: none;
     }
 
+    .local-3 {
+        margin-left: 5%;
+    }
+
+    .local-4 {
+        margin-left: 5%;
+    }
+
+    .local-address {
+        margin-left: 5%;
+    }
+
+    .local-cell {
+        margin-left: 5%;
+    }
+
     .mobile_banner {
         background-color: #5f0ac7;
         color: #ffffff;
         text-align: center;
-        line-height: 50px;
-        font-size: 23px;
-        height: 50px;
+        line-height: 40px;
+        font-size: 14px;
+        height: 40px;
+        margin: 0px 18px;
     }
 
-    .login-box {
-        position: relative;
-        top: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 5%;
+    .bg-box {
+        margin: 35px 18px;
+        margin-top: 0px;
         width: 90%;
-        height: 600px;
-        background-color: #ffffff;
-        color: #59544f;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(216, 181, 181, 0.33);
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     .u-form-group input[type="text"] {
@@ -313,16 +332,16 @@ hr {
     }
 
     .cell-fix {
-        margin-left: 8%;
+        margin-left: 10%;
     }
 
     .phone-fix {
-        margin-left: 8%;
+        margin-left: 10%;
     }
 
     .address-fix {
         margin-bottom: 30px;
-        margin-left:4%;
+        margin-left:5%;
     }
 
     .num-fix {
@@ -337,7 +356,7 @@ hr {
     }
 
     .county {
-        width: 16%;
+        width: 26%;
         height: 20px;
         color: #59544f;
         margin-right: 2%;
@@ -345,7 +364,7 @@ hr {
     }
 
     .district {
-        width: 24%;
+        width: 26%;
         height: 20px;
         color: #59544f;
         margin-right: 2%;
@@ -355,25 +374,24 @@ hr {
     .email {
         font-size: 14px;
         float: left;
-        margin-left: 12%;
+        margin-left: 5%;
     }
 
     .email-msg {
         font-size: 14px;
-        margin-right: 10%;
+        margin-left: 29%;
     }
 
     .total {
+        margin-top: 15px;
+        left: 19%;
         font-size: 14px;
-        float: left;
-        margin-left: 23%;
-        margin-right: 6%;
-        color: #848378;
     }
 
     .title {
+        margin-top: 15px;
+        left: 54%;
         font-size: 14px;
-        float: left;
     }
 
     .title-msg {
@@ -381,16 +399,21 @@ hr {
     }
 
     .float {
-        
+        margin-left:5%;
     }
 
     .undo_button {
-        width: 28%;
-        left: 7%;
+        margin-left: 5px;
+        width: 32%;
+        height: 36px;
+        font-size: 14px;
     }
 
     .finish_button {
-        width: 28%;
-        left: 65%;
+        margin-top: 110px;
+        margin-left: 86px;
+        width: 32%;
+        height: 36px;
+        font-size: 14px;
     }
 }
