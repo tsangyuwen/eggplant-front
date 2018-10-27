@@ -11,6 +11,49 @@
 </head>
 
 <body>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function() {
+                // This button will increment the value
+                $('.qtyplus').click(function(e) {
+                    // Stop acting like a button
+                    e.preventDefault();
+                    // Get the field name
+                    fieldName = $(this).attr('field');
+                    // Get its current value
+                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                    // If is not undefined
+                    if (!isNaN(currentVal)) {
+                        // Increment
+                        $('input[name=' + fieldName + ']').val(currentVal + 1);
+                    } else {
+                        // Otherwise put a 0 there
+                        $('input[name=' + fieldName + ']').val(0);
+                    }
+                });
+                // This button will decrement the value till 0
+                $(".qtyminus").click(function(e) {
+                    // Stop acting like a button
+                    e.preventDefault();
+                    // Get the field name
+                    fieldName = $(this).attr('field');
+                    // Get its current value
+                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                    // If it isn't undefined or its greater than 0
+                    if (!isNaN(currentVal) && currentVal > 0) {
+                        // Decrement one
+                        $('input[name=' + fieldName + ']').val(currentVal - 1);
+                    } else {
+                    // Otherwise put a 0 there
+                        $('input[name=' + fieldName + ']').val(0);
+                    }
+                });
+            });
+        
+        </script>
+  
     <div class="mobile_banner"><p>購物車</p></div>  
     <div class="web_banner">
       <a href="index.html">
@@ -36,18 +79,18 @@
                 <div class="web_text">
                     <div>
                         水洗單寧牛仔外套<br><br>
-                        尺寸&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顏色 <br><br>
+                        尺寸&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顏色&nbsp;
+                        <div class="colorbox"></div>
                         單價&nbsp;&nbsp;$100
                     </div>
 
-                    <div style="margin-top: 33px; margin-left: 70px">
-                        <input type="image" src="images/minus.png" width="10px" height="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="image" src="images/plus.png" width="10px" height="10">
-                    </div>
+                    <form id='myform' method='POST' action='#'>
+                        <label for=""></label><input type='button' value='-' style="font-size:15px; color: #848378;" class='qtyminus' field='quantity' /><!--
+                        --><input type='text' name='quantity' value='0' style='color:#59544f;' class='qty' /><!--
+                        --><input type='button' value='+' style="color: #848378;" class='qtyplus' field='quantity' />
+                    </form>
 
-                    <div style="border: 1px solid #59544f; width:25px; height:15px; margin-top: 34px; margin-left: -37px; text-align:center; line-height: 1.1;" > 100</div>
-
-                    <div style="margin-top: 35px; margin-left: 90px">
+                    <div style="margin-top: 35px; margin-left: 125px">
                         <p>$&nbsp;10,0000</p>
                     </div>
 
@@ -55,22 +98,22 @@
 
                 <div class="mobile_text">
                     <div>
-                        水洗單寧牛仔外套<br><br>
-                        數量<br><br>
-                        尺寸&nbsp;&nbsp;S<br><br>
+                        <span style="font-size:15px;color:#59544f">水洗單寧牛仔外套<br><br></span>
+                        <span style="color:#848378">數量<br><br>
+                        尺寸&nbsp;&nbsp;&nbsp;&nbsp;S<br><br>
                         顏色<br><br>
-                        單價&nbsp;&nbsp;$&nbsp;100<br><br>
+                        <div class="colorbox"></div>
+                        單價&nbsp;&nbsp;$&nbsp;&nbsp;100<br><br></span>
                     </div>
 
-                    <div style="margin-top: -118px; margin-left: 45px">
-                        <input type="image" src="images/minus.png" width="13px" height="13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="image" src="images/plus.png" width="13px" height="13">
-                    </div>
+                     <form id='myform' method='POST' action='#'>
+                        <label for=""></label><input type='button' value='-' style="font-size:15px; color: #c1c0bc;" class='qtyminus' field='quantity' /><!--
+                        --><input type='text' name='quantity' value='0' style='color:#59544f;' class='qty' /><!--
+                        --><input type='button' value='+' style="color: #c1c0bc;" class='qtyplus' field='quantity' />
+                    </form>
 
-                    <div style="border: 1px solid #848378; width:30px; height:16px; margin-top: -18px; margin-left: 59.5px; text-align:center; line-height: 1;" > 100</div>
-
-                    <div style="margin-top: 74px; margin-left: 95px">
-                        <p>小計&nbsp;&nbsp;10,000</p>
+                    <div style="margin-top: -49px; margin-left: 103px">
+                        <span style="color: #110b0a"><p>小計&nbsp;&nbsp;10,000</p></span>
                     </div>
                     
                 </div>
