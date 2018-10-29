@@ -84,11 +84,11 @@ input.qtyplus {
   
 input.qtyminus {
     position: relative;
-    top: 3px;
+    top: 37px;
     left: 70px;
     width: 20px;
     height: 20px;
-    line-height: 11px;
+    line-height: 12px;
     border: 1px solid #c1c0bc;
     background: #ffffff;
 }
