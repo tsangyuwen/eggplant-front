@@ -16,36 +16,32 @@ body {
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
 }
 
-.email-login {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    text-align: center;
-}
-
 .u-form-group {
     width: 100%;
     margin-bottom: 30px;
 }
 
-
-    .u-form-group input[type="text"], input[type="text"] {
-        width: 140px;
-        height: 30px;
-        outline: none;
-        border: 1px solid #ddd;
-        padding: 0 5px;
-        color: #59544f;
-        font-size: 14px;
-        -webkit-transition: all 0.1s linear;
-        -moz-transition: all 0.1s linear;
-        transition: all 0.1s linear;
-        border-right: none;
-        border-left: none;
-        border-top: none;
+    .u-form-group span.required {
+        color: #ff0000;
+        font-size: 100%;
     }
+
+
+.u-form-group input[type="text"], input[type="text"] {
+    width: 140px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 5px;
+    color: #59544f;
+    font-size: 14px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
 
     .u-form-group input {
         width: 430px;
@@ -267,13 +263,12 @@ hr {
         line-height: 40px;
         font-size: 14px;
         height: 40px;
-        margin: 0px 18px;
     }
 
     .bg-box {
-        margin: 15px 18px;
+        margin: 35px auto;
         margin-top: 0px;
-        width: 95%;
+        width: 90%;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 20px;
@@ -296,7 +291,7 @@ hr {
         border-top: none;
     }
     input[type="text"] {
-        width: 23%;
+        width: 28%;
         height: 30px;
         outline: none;
         border: 1px solid #ddd;
@@ -356,7 +351,7 @@ hr {
     }
 
     .county {
-        width: 26%;
+        width: 17%;
         height: 20px;
         color: #59544f;
         margin-right: 2%;
@@ -364,7 +359,7 @@ hr {
     }
 
     .district {
-        width: 26%;
+        width: 27%;
         height: 20px;
         color: #59544f;
         margin-right: 2%;
@@ -416,4 +411,9 @@ hr {
         height: 36px;
         font-size: 14px;
     }
+    .u-form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }

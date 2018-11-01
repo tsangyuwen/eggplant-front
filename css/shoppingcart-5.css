@@ -92,9 +92,9 @@ hr {
 
 @media screen and (max-width: 789px) {
     .bg-box {
-        margin: 35px 18px;
+        margin: 35px auto;
         margin-top: 0px;
-        width: 89.5%;
+        width: 90%;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 20px;
@@ -108,7 +108,6 @@ hr {
         line-height: 40px;
         font-size: 14px;
         height: 40px;
-        margin: 0px 18px;
     }
 
     .process-img {
