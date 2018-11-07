@@ -26,7 +26,6 @@ body {
         font-size: 100%;
     }
 
-
 .u-form-group input[type="text"], input[type="text"] {
     width: 140px;
     height: 30px;
@@ -42,6 +41,40 @@ body {
     border-left: none;
     border-top: none;
 }
+
+    .u-form-group input[type="text"].short {
+        width:  26px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #ddd;
+        padding: 0 5px;
+        color: #59544f;
+        font-size: 14px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .u-form-group input[type="text"].long {
+        width: 42px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #ddd;
+        padding: 0 5px;
+        color: #59544f;
+        font-size: 14px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+
 
     .u-form-group input {
         width: 430px;
@@ -97,12 +130,12 @@ input {
 .email {
     font-size: 14px;
     float: left;
-    margin-left: 90px;
+    margin-left: 94px;
 }
 
 .email-msg {
     font-size: 14px;
-    margin-left: 155px;
+    margin-left: 160px;
 }
 
 hr {
@@ -186,17 +219,20 @@ hr {
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    .local-phone {
+       margin-left: 90px;
+    }
 
     .local-3 {
         margin-left:90px;
     }
 
     .local-4 {
-        margin-left:87px;
+        margin-left:95px;
     }
 
     .local-address {
-        margin-left: 88px;
+        margin-left: 91px;
     }
 
     .man-fix {
@@ -204,12 +240,15 @@ hr {
     }
 
     .cell-fix {
-        margin-left: 30px;
+        margin-left: 22px;
     }
 
     .phone-fix {
-        margin-left: 35px;
-        margin-right: 28px;
+        margin-left: 32.5px;
+    }
+
+    .phone-fix-right {
+        margin-right: 15px;
     }
 
     .address-fix {
@@ -217,13 +256,13 @@ hr {
     }
 
     .num-fix {
-        margin-left: 10px;
+        margin-left: 6px;
         margin-right: 220px;
     }
     .float {
         float:left;
         width:auto;
-        margin-left:89px;
+        margin-left:91px;
     }
     
 }
@@ -241,7 +280,7 @@ hr {
     }
 
     .local-3 {
-        margin-left: 5%;
+        margin-left: 3%;
     }
 
     .local-4 {
@@ -335,12 +374,16 @@ hr {
     }
 
     .address-fix {
-        margin-bottom: 30px;
-        margin-left:5%;
+        margin-bottom: 10px;
+        margin-left:3%;
     }
 
     .num-fix {
         margin-left: 2%;
+    }
+
+    .local-cell {
+        margin-left: 3%;
     }
 
     .zipcode {
@@ -394,7 +437,7 @@ hr {
     }
 
     .float {
-        margin-left:5%;
+        margin-left:3%;
     }
 
     .undo_button {
