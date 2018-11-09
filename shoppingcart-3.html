@@ -11,47 +11,47 @@
 
 <body>
   
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+        var max = 100
+        var min = 1
 
-        <script>
-            $(function() {
-                // This button will increment the value
-                $('.qtyplus').click(function(e) {
-                    // Stop acting like a button
-                    e.preventDefault();
-                    // Get the field name
-                    fieldName = $(this).attr('field');
-                    // Get its current value
-                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-                    // If is not undefined
-                    if (!isNaN(currentVal)) {
-                        // Increment
-                        $('input[name=' + fieldName + ']').val(currentVal + 1);
-                    } else {
-                        // Otherwise put a 0 there
-                        $('input[name=' + fieldName + ']').val(0);
-                    }
-                });
-                // This button will decrement the value till 0
-                $(".qtyminus").click(function(e) {
-                    // Stop acting like a button
-                    e.preventDefault();
-                    // Get the field name
-                    fieldName = $(this).attr('field');
-                    // Get its current value
-                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-                    // If it isn't undefined or its greater than 0
-                    if (!isNaN(currentVal) && currentVal > 0) {
-                        // Decrement one
-                        $('input[name=' + fieldName + ']').val(currentVal - 1);
-                    } else {
-                    // Otherwise put a 0 there
-                        $('input[name=' + fieldName + ']').val(0);
-                    }
-                });
+        $(function() {
+
+            $('.qtyplus').click(function(e) {
+                e.preventDefault();
+                fieldName = $(this).attr('field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (currentVal < max) {
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(max);
+                }
             });
         
-        </script>
+            $(".qtyminus").click(function(e) {
+                e.preventDefault();
+                fieldName = $(this).attr('field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (currentVal > min) {
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(min);
+                }
+            });
+        
+            $( "#number" ).blur(function(e){
+                e.preventDefault();
+                var currentVal = parseInt($('input[name=quantity]').val());
+                if (!isNaN(currentVal) < min) {
+                    $('input[name=quantity]').val(min);
+                } else if(!isNAN(currentVal) > max) {
+                    $('input[name=quantity]').val(max);
+                }
+                $('input[name=quantity]').val(min);
+            });
+        });
+        
+    </script>
   
     <div class="web_banner">
       <a href="index.html">
@@ -83,10 +83,10 @@
                         單價&nbsp;&nbsp;$100
                     </div>
 
-                    <form id='myform' method='POST' action='#'>
-                        <label for=""></label><input type='button' value='-' style="font-size:15px; color: #848378;" class='qtyminus' field='quantity' /><!--
-                        --><input type='text' name='quantity' value='0' style='color:#59544f;' class='qty' /><!--
-                        --><input type='button' value='+' style="color: #848378;" class='qtyplus' field='quantity' />
+                    <form method='POST' action='#'>
+                        <input type='button' value='-' style="font-size:15px; color: #848378;" class='qtyminus' field='quantity' />
+                        <input type='text' name='quantity' value='0' style='color:#59544f;' id='number' class='qty' />
+                        <input type='button' value='+' style="color: #848378;" class='qtyplus' field='quantity' />
                     </form>
 
                     <div style="margin-top: 35px; margin-left: 125px">
@@ -105,10 +105,10 @@
                         單價&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;100<br><br></span>
                     </div>
 
-                     <form id='myform' method='POST' action='#'>
-                        <label for=""></label><input type='button' value='-' style="font-size:15px; color: #c1c0bc;" class='qtyminus' field='quantity' /><!--
-                        --><input type='text' name='quantity' value='0' style='color:#59544f;' class='qty' /><!--
-                        --><input type='button' value='+' style="color: #c1c0bc;" class='qtyplus' field='quantity' />
+                     <form method='POST' action='#'>
+                        <input type='button' value='-' style="font-size:15px; color: #c1c0bc;" class='qtyminus' field='quantity' />
+                        <input type='text' name='quantity' value='0' style='color:#59544f;' id='number' class='qty' /><
+                        <input type='button' value='+' style="color: #c1c0bc;" class='qtyplus' field='quantity' />
                     </form>
 
                     <div style="margin-top: -49px; margin-left: 96px">
