@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -10,49 +11,44 @@
 </head>
 
 <body>
-  
-  <script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
         var max = 100
         var min = 1
 
         $(function() {
 
             $('.qtyplus').click(function(e) {
-                e.preventDefault();
-                fieldName = $(this).attr('field');
-                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                var currentVal = parseInt($("#number").val());
                 if (currentVal < max) {
-                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                    $("#number").val(currentVal + 1);
                 } else {
-                    $('input[name=' + fieldName + ']').val(max);
+                    $("#number").val(max);
                 }
             });
         
             $(".qtyminus").click(function(e) {
-                e.preventDefault();
-                fieldName = $(this).attr('field');
-                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                var currentVal = parseInt($("#number").val());
                 if (currentVal > min) {
-                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                    $("#number").val(currentVal - 1);
                 } else {
-                    $('input[name=' + fieldName + ']').val(min);
+                    $("#number").val(min);
                 }
             });
         
             $( "#number" ).blur(function(e){
-                e.preventDefault();
-                var currentVal = parseInt($('input[name=quantity]').val());
-                if (!isNaN(currentVal) < min) {
-                    $('input[name=quantity]').val(min);
-                } else if(!isNAN(currentVal) > max) {
-                    $('input[name=quantity]').val(max);
+                var currentVal = parseInt($("#number").val());
+                if (currentVal < min || isNaN(currentVal)) {
+                    $("#number").val(min);
+                } else if(currentVal > max) {
+                    $("#number").val(max);
                 }
-                $('input[name=quantity]').val(min);
             });
         });
         
-    </script>
-  
+        </script>
+
     <div class="web_banner">
       <a href="index.html">
         <img src="images/LOGO.jpg" class="Logo" width="130"/>
@@ -68,13 +64,12 @@
         <div class="push"></div>
 
         <div class="product_list">
-
             <div class="cross">
                 <input type="image" src="images/cross.png" width="10px">
             </div>
 
-            <div class="plusandminus">
                 <img src="images/女裝長袖.jpg" class="pro_img"/>
+
                 <div class="web_text">
                     <div>
                         水洗單寧牛仔外套<br><br>
@@ -83,13 +78,7 @@
                         單價&nbsp;&nbsp;$100
                     </div>
 
-                    <form method='POST' action='#'>
-                        <input type='button' value='-' style="font-size:15px; color: #848378;" class='qtyminus' field='quantity' />
-                        <input type='text' name='quantity' value='0' style='color:#59544f;' id='number' class='qty' />
-                        <input type='button' value='+' style="color: #848378;" class='qtyplus' field='quantity' />
-                    </form>
-
-                    <div style="margin-top: 35px; margin-left: 125px">
+                    <div style="margin-top: 35px; margin-left: 180px">
                         <p>$&nbsp;10,000</p>
                     </div>
 
@@ -105,20 +94,18 @@
                         單價&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;100<br><br></span>
                     </div>
 
-                     <form method='POST' action='#'>
-                        <input type='button' value='-' style="font-size:15px; color: #c1c0bc;" class='qtyminus' field='quantity' />
-                        <input type='text' name='quantity' value='0' style='color:#59544f;' id='number' class='qty' /><
-                        <input type='button' value='+' style="color: #c1c0bc;" class='qtyplus' field='quantity' />
-                    </form>
-
-                    <div style="margin-top: -49px; margin-left: 96px">
+                    <div style="margin-top: -29px; margin-left: 96px">
                         <span style="color: #110b0a"><p>小計&nbsp;&nbsp;10,000</p></span>
                     </div>
                     
                 </div>
 
-            </div>
+        </div>
         
+        <div class="plusandminus">
+            <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+            <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+            <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
         </div>
 
         <div class="clearfix">
