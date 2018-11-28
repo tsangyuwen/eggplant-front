@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="productlist.css">
+</head>
+
+<body>
+
+<script>
+  function AddFunction() {
+    var x = document.getElementById("add");
+    if (x.style.display == "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  var max = 100
+  var min = 1
+
+    $(function() {
+
+      $('.qtyplus').click(function(e) {
+        var currentVal = parseInt($("#number").val());
+        if (currentVal < max) {
+          $("#number").val(currentVal + 1);
+        } else {
+          $("#number").val(max);
+        }
+      });
+        
+      $(".qtyminus").click(function(e) {
+        var currentVal = parseInt($("#number").val());
+        if (currentVal > min) {
+          $("#number").val(currentVal - 1);
+        } else {
+          $("#number").val(min);
+        }
+      });
+        
+      $( "#number" ).blur(function(e){
+        var currentVal = parseInt($("#number").val());
+          if (currentVal < min || isNaN(currentVal)) {
+            $("#number").val(min);
+          } else if(currentVal > max) {
+            $("#number").val(max);
+          }
+        });
+    });
+
+</script>
+
+
+    <div class="web_banner">
+      <a href="index.html">
+        <img src="LOGO.jpg" class="Logo" width="130"/>
+      </a>
+      <div class="banner_button">
+        <style>
+          a:hover {
+            color: #848378;
+            text-decoration: none;
+          }
+        </style>
+        <a href="facebook.com" class="first_button">MEN</a>
+        <a href="facebook.com" class="first_button">WOMEN</a>
+        <a href="facebook.com" class="first_button">KIDS</a>
+        <a href="facebook.com" class="first_button">BABY</a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <p class="topcls">上著</p>
+          <div class="class">
+            <a href="facebook.com" class="procls">無袖</a><br>
+            <a href="facebook.com" class="procls">短袖</a><br>
+            <a href="facebook.com" class="procls">長袖</a><br>
+            <a href="facebook.com" class="procls">T-shirt</a><br>
+            <a href="facebook.com" class="procls">連帽上衣</a><br>
+            <a href="facebook.com" class="procls">牛仔</a><br>
+            <a href="facebook.com" class="procls">襯衫</a>
+          </div>
+          <p class="topcls" style="margin-top: 40px">下著</p>
+          <div class="class">
+            <a href="facebook.com" class="procls">長褲</a><br>
+            <a href="facebook.com" class="procls">短褲</a><br>
+            <a href="facebook.com" class="procls">牛仔</a><br>
+            <a href="facebook.com" class="procls">束口褲</a>
+          </div>
+          <p class="topcls" style="margin-top: 40px">外套</p>
+          <div class="class">
+            <a href="facebook.com" class="procls">連帽外套</a><br>
+            <a href="facebook.com" class="procls">牛仔外套</a><br>
+            <a href="facebook.com" class="procls">西裝外套</a><br>
+            <a href="facebook.com" class="procls">針織外套</a><br>
+            <a href="facebook.com" class="procls">羽絨外套</a>
+          </div>
+          <p class="topcls" style="margin-top: 40px">內著</p>
+          <div class="class">
+            <a href="facebook.com" class="procls">內衣</a><br>
+            <a href="facebook.com" class="procls">內褲</a><br>
+            <a href="facebook.com" class="procls">襪子</a>
+          </div>
+          <p class="topcls" style="margin-top: 40px;">配件</p>
+          <div class="class">
+            <a href="facebook.com" class="procls">帽子</a><br>
+            <a href="facebook.com" class="procls">圍巾</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10">
+          <div class="col-md-3">
+            <div class="proinfo">
+              <div id="add" class="addbox">
+                <div>
+                  <p style="margin-top: 15px; margin-left: 15px;">顏色</p>
+                  <button class="colorbox" style="background-color: #D17978;"></button>
+                  <button class="colorbox" style="background-color: #8DC1E8;"></button>
+                  <button class="colorbox" style="background-color: #CB7F41;"></button>
+                  <button class="colorbox" style="background-color: #D5CF5E;"></button>
+                  <button class="colorbox" style="background-color: #25422E;"></button><br>
+                  <button class="colorbox" style="background-color: #22293B;"></button>
+                  <button class="colorbox" style="background-color: #662E3E;"></button>
+                  <button class="colorbox" style="background-color: #5D3B24;"></button>
+                  <button class="colorbox" style="background-color: #000000;"></button>
+                  <button class="colorbox" style="background-color: #BBBAC0;"></button>
+                </div> 
+                <div>
+                  <p style="margin-top: -65px; margin-left: 200px;">尺寸</p>
+                  <button class="sizebox">XS</button>
+                  <button class="sizebox">S</button>
+                  <button class="sizebox">M</button>
+                  <button class="sizebox">L</button>
+                  <button class="sizebox">XL</button>
+                </div>
+                <div>
+                  <p style="margin-top: 75px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 200px;font-size: 14px;">庫存量：300</p>
+                  <a href="www.facebook.com"><button class="addbutton">加入購物車</button></a>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p onclick="AddFunction()">加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="proinfo">
+              <a href="facebook.com"><img src="女_針織.png" class="propho"></a>
+              <div class="addcart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+
