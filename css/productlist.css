@@ -21,14 +21,18 @@ body {
 }
 
 .banner_button {
-    margin-top: -30px;
-    margin-left: 200px;
+    margin-top: -20px;
+    margin-left: 20%;
 }
 
 .first_button {
     margin-left: 35px;
     color: #848378;
     font-size: 13px;
+}
+
+.first_button:focus {
+    color: #5f0ac7;
 }
 
 .class {
@@ -49,6 +53,10 @@ body {
     color: #848378;
 }
 
+.procls:focus {
+    color: #5f0ac7;
+}
+
 .proinfo {
     font-size: 14px;
     color: #848378;
@@ -57,19 +65,14 @@ body {
 
 .propho {
     margin:auto;
-    width: 230px;
+    width: 105%;
     height: auto;
-}
-
-.tooltip {
-    width: 400px;
-    height: 100px;
 }
 
 .addcart {
     margin-bottom: 10px;
-    width: 230px;
-    height: 40px;
+    width: 105%;
+    height: -10%;
     background-color: #c893fa;
     font-size: 14px;
     color: #ffffff;
@@ -79,11 +82,11 @@ body {
 }
 
 .addbox {
-    margin-top: 90px;
+    margin-top: 98px;
     margin-left: -50px;
     position: absolute;
-    width: 330px;
-    height: 210px;
+    width: 130%;
+    height: 45%;
     background-color: #ffffff;
     font-size: 16px;
     color: #59544f;
@@ -110,6 +113,7 @@ body {
     margin-left: 35px;
     background-color: #ffffff;
     font-size: 13px;
+    color: #848378;
     width: 25px;
     height: 25px;
     line-height: 10px;
@@ -119,16 +123,31 @@ body {
 }
 
 .addbutton {
-    top: 10px;
-    margin-left: 200px;
-    width: 90px;
+    top: 5px;
+    margin-left: 190px;
+    width: 100px;
     height: 25px;
     font-size: 14px;
-    line-height: 10px;
+    line-height: 25px;
+    text-align: center;
     background-color: #9b3af6;
     color: #ffffff;
     border: none;
     cursor: pointer;
+}
+
+.addfinish {
+    position: fixed;
+    margin-top: 180px;
+    margin-left: 530px;
+    width: 250px;
+    height: 65px;
+    background-color:#ffffff;
+    opacity: 0.85;
+    color: #59544f;
+    line-height: 69px;
+    text-align: center;
+    display: none;
 }
 
 .qty {
@@ -158,7 +177,7 @@ input.qtyplus {
   
 input.qtyminus {
     position: relative;
-    top: -42px;
+    top: -41.5px;
     left: 64px;
     width: 20px;
     height: 20px;
@@ -168,7 +187,7 @@ input.qtyminus {
 }
 
 .trangle {
-    margin-top: 16px;
+    margin-top: 8px;
     margin-left: 153px;
     border-right: 12px solid rgba(0,0,0,0);
     border-left: 12px solid rgba(0,0,0,0);
@@ -182,14 +201,14 @@ input.qtyminus {
 
     .mobile_banner {
         display: none;
-    }    
+    }
     
-    .card_radio {
-        margin-top: 29px;
+    .proname {
+        display: none;
     }
 
-    .webatm_radio {
-        margin-top: 33px;
+    .price {
+        display: none;
     }
 
 }
@@ -202,22 +221,105 @@ input.qtyminus {
     }
 
     .mobile_banner {
-        background-color:#5f0ac7;
-        color: #ffffff;
-        text-align: center;
-        line-height: 40px;
-        font-size: 14px; 
+        margin-bottom: 40px;
+        background-color:#ffffff; 
         height:40px;
     }
 
-    .redo {
-        margin-top: -1px;
-        margin-left: -88%;
+   .row {
+       margin-top: 0px;
+       margin-right: 0px;
+   }
+
+   .col-sm-2 {
+       display: none;
+   }
+
+   .border {
+       margin-top:15px;
+       margin-left: 20px;
+       margin-right: 50px;
+       border-bottom: #848378 solid 0.9px;
+       
+   }
+
+   .search {
+       margin-left: 320px;
+       width: 5%;
+       height: auto;
+   }
+
+   .banner_button {
+       margin-top: 20px;
+       margin-left: 3%;
+   }
+
+   .first_button {
+       margin-left: 22px;
+   }
+
+   .propho {
+       margin-left: 2px;
+       width: 100%;
+   }
+
+   .addcart {
+       margin-left: 2px;
+       width: 100%;
+       height: 30px;
+       line-height: 30px;
     }
 
-    .title {
-        margin-top: -40px;
+    .addbox {
+        position: fixed;
+        margin-top: 200px;
+        margin-left: -29.5px;
+        width: 100%;
+        height: 100%;
+        opacity: 1.0;
+        font-size: 14px;
     }
-    
-    
+
+    .addbutton {
+        margin-top: 50px;
+        margin-left: -1px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .sizebox {
+        margin-top: -24px;
+        margin-right: -33px;
+        margin-left: 34px;
+    }
+
+    .qty {
+        top: -10px;
+        left: 10px;
+    }
+
+    input.qtyplus {
+        top: -10px;
+        left: 5px;
+    }
+
+    input.qtyminus {
+        top: -10px;
+        left: 14px;
+    }
+
+    .addfinish {
+        position: fixed;
+        margin-top: 200px;
+        margin-left: 115px;
+        width: 130px;
+        height: 35px;
+        background-color:#ffffff;
+        opacity: 0.85;
+        color: #59544f;
+        line-height: 35px;
+        text-align: center;
+        display: none;
+    }
 }
