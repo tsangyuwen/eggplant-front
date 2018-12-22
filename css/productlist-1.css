@@ -1,0 +1,70 @@
+/* phone version */
+@media screen and (max-width: 789px) {
+
+    body {
+        font-family: Arial,'Microsoft JhengHei';
+        background-color: #ffffff;
+    }
+
+    .mobile_banner {
+        margin-bottom: 40px;
+        background-color:#ffffff; 
+        height:40px;
+    }
+
+   .row {
+       margin-top: 0px;
+       margin-right: -15px;
+   }
+
+   .border {
+       margin-top:15px;
+       margin-left: 20px;
+       margin-right: 50px;
+       border-bottom: #848378 solid 0.9px;
+       
+   }
+
+   .search {
+       margin-left: 305px;
+       width: 5%;
+       height: auto;
+   }
+
+   .banner_button {
+       margin-top: 20px;
+       margin-left: 1px;
+   }
+
+   .first_button {
+       margin-left: 40px;
+       color: #848378;
+       font-size: 13px;
+   }
+
+   .class {
+       margin-bottom: 40px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       border-top: #c1c0bc solid 0.1px;
+       border-bottom: #c1c0bc solid 0.1px;
+   }
+
+   .procls {
+       color: #59544f;
+       margin-left: 25px;
+       margin-right: 13px;
+   }
+
+   .classbox {
+       margin-bottom: 70px;
+       margin-left: 5px;
+       width: 80px;
+       height: 80px;
+       background-image: linear-gradient(to left, #ce248d, #5f0ac7);
+       color: #ffffff;
+       text-align: center;
+       line-height: 80px;
+   }
+
+}

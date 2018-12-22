@@ -1,0 +1,281 @@
+body {
+    font-family: Arial,'Microsoft JhengHei';
+    background-color: #ffffff;
+}
+
+.addfinish {
+    position: fixed;
+    margin-top: 180px;
+    margin-left: 530px;
+    width: 250px;
+    height: 65px;
+    background-color:#ffffff;
+    opacity: 0.85;
+    color: #59544f;
+    line-height: 69px;
+    text-align: center;
+    display: none;
+}
+
+.qty {
+    position: relative;
+    top: -41px;
+    left: 59px;
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    line-height: 100px;
+    border: 0;
+    border-top: 1px solid #c1c0bc;
+    border-bottom: 1px solid #c1c0bc;
+}
+  
+  
+input.qtyplus {
+    position: relative;
+    top: -41px;
+    left: 54px;
+    width: 20px;
+    height: 20px;
+    line-height: 12px;
+    border: 1px solid #c1c0bc;
+    background: #ffffff;
+}
+  
+input.qtyminus {
+    position: relative;
+    top: -41.5px;
+    left: 64px;
+    width: 20px;
+    height: 20px;
+    line-height: 12px;
+    border: 1px solid #c1c0bc;
+    background: #ffffff;
+}
+
+.trangle {
+    margin-top: 8px;
+    margin-left: 153px;
+    border-right: 12px solid rgba(0,0,0,0);
+    border-left: 12px solid rgba(0,0,0,0);
+    border-top: 15px solid #ffffff;
+    opacity: 0.9;
+    display:inline-block
+}
+
+/* web version */
+@media screen and (min-width: 790px) {
+
+    .mobile_banner {
+        display: none;
+    }
+    
+    .proname {
+        display: none;
+    }
+
+    .price {
+        display: none;
+    }
+
+}
+
+/* phone version */
+@media screen and (max-width: 789px) {
+
+    .web_banner {
+        display: none;
+    }
+
+    .mobile_banner {
+        margin-bottom: 40px;
+        background-color:#ffffff; 
+        height:40px;
+    }
+
+   .row {
+       margin-top: 0px;
+       margin-right: 0px;
+   }
+
+   .col-sm-2 {
+       display: none;
+   }
+
+   .border {
+       margin-top:15px;
+       margin-left: 20px;
+       margin-right: 50px;
+       border-bottom: #848378 solid 0.9px;
+       
+   }
+
+   .search {
+       margin-left: 320px;
+       width: 5%;
+       height: auto;
+   }
+
+   .redo {
+       margin-top: -4px;
+       margin-left: 10px;
+   }
+
+   .banner_button {
+       margin-top: 20px;
+       margin-left: 3%;
+   }
+
+   .first_button {
+       margin-left: 135px;
+       color: #5f0ac7;
+       font-size: 14px;
+   }
+
+   .class {
+       margin-top: -10px; 
+       margin-left: 5px;
+       margin-bottom: 10px;
+       line-height: 24px;
+       font-size: 14px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       border-top: #c1c0bc solid 0.1px;
+       border-bottom: #c1c0bc solid 0.1px;
+   }
+
+   .procls {
+       color: #848378;
+       margin-left: 18px;
+   }
+
+   .proinfo {
+    font-size: 14px;
+    color: #848378;
+    line-height: 30px;
+}
+
+   .propho {
+       margin:auto;
+       margin-left: 2px;
+       width: 100%;
+       height: auto;
+   }
+
+   .addcart {
+       margin-left: 2px;
+       margin-bottom: 10px;
+       background-color: #c893fa;
+       color: #ffffff;
+       font-size: 14px;
+       width: 100%;
+       height: 30px;
+       line-height: 30px;
+       text-align: center;
+       cursor: pointer;
+    }
+
+    .addbox {
+        position: fixed;
+        margin-top: 200px;
+        margin-left: -29.5px;
+        width: 100%;
+        height: 150%;
+        opacity: 1.0;
+        font-size: 14px;
+        background-color: #ffffff;
+        color: #59544f;
+        border: 0.1px solid;
+        border-color: #c1c0bc;
+        z-index: 1;
+        display: none;
+    }
+
+    .colorbox {
+        margin-right: -8px;
+        margin-left: 16px;
+        width: 23px;
+        height: 23px;
+        float: left;
+        border: none;
+        cursor: pointer;
+    }
+
+    .addbutton {
+        margin-top: 30px;
+        margin-left: -1px;
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #9b3af6;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .sizebox {
+        margin-top: -24px;
+        margin-right: -33px;
+        margin-left: 34px;
+        background-color: #ffffff;
+        font-size: 13px;
+        color: #848378;
+        width: 25px;
+        height: 25px;
+        line-height: 10px;
+        float: left;
+        border: none;
+        cursor: pointer;
+    }
+
+    .qty {
+        position: relative;
+        top: -17px;
+        left: 10px;
+        width: 35px;
+        height: 20px;
+        text-align: center;
+        line-height: 100px;
+        border: 0;
+        border-top: 1px solid #c1c0bc;
+        border-bottom: 1px solid #c1c0bc;
+    }
+
+    input.qtyplus {
+        position: relative;
+        top: -17px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        line-height: 12px;
+        border: 1px solid #c1c0bc;
+        background: #ffffff;
+    }
+
+    input.qtyminus {
+        position: relative;
+        top: -17px;
+        left: 14px;
+        width: 20px;
+        height: 20px;
+        line-height: 12px;
+        border: 1px solid #c1c0bc;
+        background: #ffffff;
+    }
+
+    .addfinish {
+        position: fixed;
+        margin-top: 200px;
+        margin-left: 115px;
+        width: 130px;
+        height: 35px;
+        background-color:#ffffff;
+        opacity: 0.85;
+        color: #59544f;
+        line-height: 35px;
+        text-align: center;
+        display: none;
+    }
+}
