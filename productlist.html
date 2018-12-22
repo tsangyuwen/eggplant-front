@@ -14,49 +14,98 @@
 </head>
 
 <body>
-
 <script>
-  function AddFunction() {
+
+  /*顯示加入購物車框*/
+  /*function AddFunction() {
     var x = document.getElementById("add");
     if (x.style.display == "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
-  }
+  }*/
 
+  /*$(document).ready(function(){
+    $(".addcart").click(function(){
+      $(this).prev('div').show(300);
+    });
+  });*/
+
+  /*點任意處隱藏*/
+  $(function () {
+    $(".addcart").click(function(){
+      $(this).prev('div').show(300);
+      event.stopPropagation();
+      $(this).prevAll('div').toggle();
+      return false;
+    });
+    $(document).click(function (event) {
+      var con = $('.addcart');
+      if(!con.is(event.target) && con.has(event.target).length === 0) {
+        $(this).prev.hide();
+      }
+    });
+  })
+
+
+  /*淡入淡出*/
+  $(function() {
+    var x = document.getElementById("add");
+    $("#addbut").click(function() {
+      $("#finish").fadeIn(500);
+      x.style.display = "none";
+    })
+  })
+
+  $(function() {
+    $("#addbut").click(function() {
+      $("#finish").fadeOut(3500);
+    })
+  })
+  
+  /*抓linkvalue*/
+  $(document).ready(function() {
+    $("a").click(function(event) {
+      var href = $('a').attr('href');
+      event.preventDefault();
+    });
+  });
+
+  
+  /*加減按鈕*/  
   var max = 100
   var min = 1
 
-    $(function() {
+  $(function() {
 
-      $('.qtyplus').click(function(e) {
-        var currentVal = parseInt($("#number").val());
-        if (currentVal < max) {
-          $("#number").val(currentVal + 1);
-        } else {
-          $("#number").val(max);
-        }
-      });
-        
-      $(".qtyminus").click(function(e) {
-        var currentVal = parseInt($("#number").val());
-        if (currentVal > min) {
-          $("#number").val(currentVal - 1);
-        } else {
-          $("#number").val(min);
-        }
-      });
-        
-      $( "#number" ).blur(function(e){
-        var currentVal = parseInt($("#number").val());
-          if (currentVal < min || isNaN(currentVal)) {
-            $("#number").val(min);
-          } else if(currentVal > max) {
-            $("#number").val(max);
-          }
-        });
+    $('.qtyplus').click(function(e) {
+      var currentVal = parseInt($(this).prev('input').val());
+      if (currentVal < max) {
+        $(this).prev('input').val(currentVal + 1);
+      } else {
+        $(this).prec('input').val(max);
+      }
     });
+        
+    $(".qtyminus").click(function(e) {
+      var currentVal = parseInt($(this).next('input').val());
+      if (currentVal > min) {
+        $(this).next('input').val(currentVal - 1);
+      } else {
+        $(this).next('input').val(min);
+      }
+    });
+        
+    $('.qty').blur(function(e){
+      var currentVal = parseInt($(this).closest('input').val());
+      if (currentVal < min || isNaN(currentVal)) {
+        $(this).closest('input').val(min);
+      } else if(currentVal > max) {
+        $(this).closest('input').val(max);
+      }
+    });
+  }); 
 
 </script>
 
@@ -72,80 +121,102 @@
             text-decoration: none;
           }
         </style>
-        <a href="facebook.com" class="first_button">MEN</a>
-        <a href="facebook.com" class="first_button">WOMEN</a>
-        <a href="facebook.com" class="first_button">KIDS</a>
-        <a href="facebook.com" class="first_button">BABY</a>
+        <a href="#" class="first_button">MEN</a>
+        <a href="#" class="first_button">WOMEN</a>
+        <a href="#" class="first_button">KIDS</a>
+        <a href="#" class="first_button">BABY</a>
       </div>
     </div>
+
+    <div class="mobile_banner">
+      <div class="border"><a href="#"><img src="images/search.png" class="search"></a></div>
+      <div class="banner_button">
+        <style>
+          a:hover {
+            color: #848378;
+            text-decoration: none;
+          }
+        </style>
+        <a href="#" class="first_button">HOME</a>
+        <a href="#" class="first_button">MEN</a>
+        <a href="#" class="first_button">WOMEN</a>
+        <a href="#" class="first_button">KIDS</a>
+        <a href="#" class="first_button">BABY</a>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-2">
           <p class="topcls">上著</p>
           <div class="class">
-            <a href="facebook.com" class="procls">無袖</a><br>
-            <a href="facebook.com" class="procls">短袖</a><br>
-            <a href="facebook.com" class="procls">長袖</a><br>
-            <a href="facebook.com" class="procls">T-shirt</a><br>
-            <a href="facebook.com" class="procls">連帽上衣</a><br>
-            <a href="facebook.com" class="procls">牛仔</a><br>
-            <a href="facebook.com" class="procls">襯衫</a>
+            <a href="#" class="procls">無袖</a><br>
+            <a href="#" class="procls">短袖</a><br>
+            <a href="#" class="procls">長袖</a><br>
+            <a href="#" class="procls">T-shirt</a><br>
+            <a href="#" class="procls">連帽上衣</a><br>
+            <a href="#" class="procls">牛仔</a><br>
+            <a href="#" class="procls">襯衫</a>
           </div>
           <p class="topcls" style="margin-top: 40px">下著</p>
           <div class="class">
-            <a href="facebook.com" class="procls">長褲</a><br>
-            <a href="facebook.com" class="procls">短褲</a><br>
-            <a href="facebook.com" class="procls">牛仔</a><br>
-            <a href="facebook.com" class="procls">束口褲</a>
+            <a href="#" class="procls">長褲</a><br>
+            <a href="#" class="procls">短褲</a><br>
+            <a href="#" class="procls">牛仔</a><br>
+            <a href="#" class="procls">束口褲</a>
           </div>
           <p class="topcls" style="margin-top: 40px">外套</p>
           <div class="class">
-            <a href="facebook.com" class="procls">連帽外套</a><br>
-            <a href="facebook.com" class="procls">牛仔外套</a><br>
-            <a href="facebook.com" class="procls">西裝外套</a><br>
-            <a href="facebook.com" class="procls">針織外套</a><br>
-            <a href="facebook.com" class="procls">羽絨外套</a>
+            <a href="#" class="procls">連帽外套</a><br>
+            <a href="#" class="procls">牛仔外套</a><br>
+            <a href="#" class="procls">西裝外套</a><br>
+            <a href="#" class="procls">針織外套</a><br>
+            <a href="#" class="procls">羽絨外套</a>
           </div>
           <p class="topcls" style="margin-top: 40px">內著</p>
           <div class="class">
-            <a href="facebook.com" class="procls">內衣</a><br>
-            <a href="facebook.com" class="procls">內褲</a><br>
-            <a href="facebook.com" class="procls">襪子</a>
+            <a href="#" class="procls">內衣</a><br>
+            <a href="#" class="procls">內褲</a><br>
+            <a href="#" class="procls">襪子</a>
           </div>
           <p class="topcls" style="margin-top: 40px;">配件</p>
           <div class="class">
-            <a href="facebook.com" class="procls">帽子</a><br>
-            <a href="facebook.com" class="procls">圍巾</a>
+            <a href="#" class="procls">帽子</a><br>
+            <a href="#" class="procls">圍巾</a>
           </div>
         </div>
         
-        <div class="col-md-10">
-          <div class="col-md-3">
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <div class="col-sm-3 col-md-3 col-xs-6">
             <div class="proinfo">
-              <div id="add" class="addbox">
+              <div class="addbox" id="add">
                 <div>
-                  <p style="margin-top: 15px; margin-left: 15px;">顏色</p>
-                  <button class="colorbox" style="background-color: #D17978;"></button>
-                  <button class="colorbox" style="background-color: #8DC1E8;"></button>
-                  <button class="colorbox" style="background-color: #CB7F41;"></button>
-                  <button class="colorbox" style="background-color: #D5CF5E;"></button>
-                  <button class="colorbox" style="background-color: #25422E;"></button><br>
-                  <button class="colorbox" style="background-color: #22293B;"></button>
-                  <button class="colorbox" style="background-color: #662E3E;"></button>
-                  <button class="colorbox" style="background-color: #5D3B24;"></button>
-                  <button class="colorbox" style="background-color: #000000;"></button>
-                  <button class="colorbox" style="background-color: #BBBAC0;"></button>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
                 </div> 
                 <div>
-                  <p style="margin-top: -65px; margin-left: 200px;">尺寸</p>
-                  <button class="sizebox">XS</button>
-                  <button class="sizebox">S</button>
-                  <button class="sizebox">M</button>
-                  <button class="sizebox">L</button>
-                  <button class="sizebox">XL</button>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
                 </div>
                 <div>
-                  <p style="margin-top: 75px; margin-left: 15px;">數量</p>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
                   <div class="plusandminus">
                     <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
                     <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
@@ -153,23 +224,358 @@
                   </div>
                 </div>
                 <div>
-                  <p style="margin-top: -72px; margin-left: 200px;font-size: 14px;">庫存量：300</p>
-                  <a href="www.facebook.com"><button class="addbutton">加入購物車</button></a>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
                 </div>
                 <div class="trangle"></div>
               </div>
               <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
-              <div class="addcart"><p onclick="AddFunction()">加入購物車</p></div>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p">加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
+              <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
+              <p style="color: #59544f">NT.650</p><br>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-6">
+            <div class="proinfo">
+              <div class="addbox" id="add">
+                <div>
+                  <div class="proname">
+                    <p style="font-size:14px; color: #000000; margin-top: 15px; margin-left: 14px;">長袖短版針織毛衣</p>
+                    <p style="font-size:14px; color: #000000; margin-top: -40px; margin-left: 187px">NT.650</p>
+                  </div>
+                  <p style="margin-top: 18px; margin-left: 15px;">顏色</p>
+                  <a href="#" class="colorbox" style="background-color: #D17978;"></a>
+                  <a href="#" class="colorbox" style="background-color: #8DC1E8;"></a>
+                  <a href="#" class="colorbox" style="background-color: #CB7F41;"></a>
+                  <a href="#" class="colorbox" style="background-color: #D5CF5E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #25422E;"></a><br>
+                  <a href="#" class="colorbox" style="background-color: #22293B;"></a>
+                  <a href="#" class="colorbox" style="background-color: #662E3E;"></a>
+                  <a href="#" class="colorbox" style="background-color: #5D3B24;"></a>
+                  <a href="#" class="colorbox" style="background-color: #000000;"></a>
+                  <a href="#" class="colorbox" style="background-color: #BBBAC0;"></a>
+                </div> 
+                <div>
+                  <p class="mobile_size" style="margin-top: -69px; margin-left: 187px;">尺寸</p>
+                  <a href="#" class="sizebox">XS</a>
+                  <a href="#" class="sizebox">S</a>
+                  <a href="#" class="sizebox">M</a>
+                  <a href="#" class="sizebox">L</a>
+                  <a href="#" class="sizebox">XL</a>
+                </div>
+                <div>
+                  <p style="margin-top: 85px; margin-left: 15px;">數量</p>
+                  <div class="plusandminus">
+                    <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+                    <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+                    <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+                  </div>
+                </div>
+                <div>
+                  <p style="margin-top: -72px; margin-left: 187px;font-size: 14px;">庫存量：300</p>
+                  <div id="addbut" class="addbutton"><p>加入購物車</p></div>
+                </div>
+                <div class="trangle"></div>
+              </div>
+              <a href="facebook.com"><img src="images/女_針織.png" class="propho"></a>
+              <div class="addcart" id="cart"><p>加入購物車</p></div>
               <a href="facebook.com" style="color: #848378">長袖短版針織毛衣</a>
               <p style="color: #59544f">NT.650</p><br>
             </div>
           </div>
         </div>
+        <div id="finish" class="addfinish"><p>加入購物車成功！</p></div>
       </div>
     </div>
 
-</body>
+</body> 
 
 </html>
-
-
