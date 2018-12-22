@@ -20,32 +20,47 @@
         $(function() {
 
             $('.qtyplus').click(function(e) {
-                var currentVal = parseInt($("#number").val());
+                var currentVal = parseInt($(this).prev('input').val());
                 if (currentVal < max) {
-                    $("#number").val(currentVal + 1);
+                    $(this).prev('input').val(currentVal + 1);
                 } else {
-                    $("#number").val(max);
+                    $(this).prec('input').val(max);
                 }
             });
         
             $(".qtyminus").click(function(e) {
-                var currentVal = parseInt($("#number").val());
+                var currentVal = parseInt($(this).next('input').val());
                 if (currentVal > min) {
-                    $("#number").val(currentVal - 1);
+                    $(this).next('input').val(currentVal - 1);
                 } else {
-                    $("#number").val(min);
+                    $(this).next('input').val(min);
                 }
             });
         
-            $( "#number" ).blur(function(e){
-                var currentVal = parseInt($("#number").val());
+            $('.qty').blur(function(e){
+                var currentVal = parseInt($(this).closest('input').val());
                 if (currentVal < min || isNaN(currentVal)) {
-                    $("#number").val(min);
+                    $(this).closest('input').val(min);
                 } else if(currentVal > max) {
-                    $("#number").val(max);
+                    $(this).closest('input').val(max);
                 }
             });
         });
+
+
+        /*點叉叉消失*/
+        $(document).ready(function(){
+            $(".cross").click(function(){
+              $(this).closest('div').hide(300);
+            });
+        });
+
+        /*商品總計*/
+        if ($().is(":checked")) {
+          var quantity = parseInt($(this).closest('input').val());
+          var price = parseFloat($(this).parents(".product_list").find(".unitprice").text());
+          var smalltotal = quantity*price;
+        }
         
         </script>
 
@@ -63,49 +78,74 @@
 
         <div class="push"></div>
 
-        <div class="product_list">
-            <div class="cross">
-                <input type="image" src="images/cross.png" width="10px">
+        <div class="product_list" id="prolist">
+          <input type="image" src="images/cross.png" width="10px" id="close0" class="cross">
+          <img src="images/女裝長袖.jpg" class="pro_img"/>
+          <div class="web_text">
+            <div style="width: 150px;">
+              水洗單寧牛仔外套<br><br>
+              尺寸&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顏色&nbsp;
+              <div class="colorbox"></div>
+              單價&nbsp;&nbsp;$<div class="unitprice">100</div>
             </div>
-
-                <img src="images/女裝長袖.jpg" class="pro_img"/>
-
-                <div class="web_text">
-                    <div>
-                        水洗單寧牛仔外套<br><br>
-                        尺寸&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顏色&nbsp;
-                        <div class="colorbox"></div>
-                        單價&nbsp;&nbsp;$100
-                    </div>
-
-                    <div style="margin-top: 35px; margin-left: 180px">
-                        <p>$&nbsp;10,000</p>
-                    </div>
-
-                </div>
-
-                <div class="mobile_text">
-                    <div>
-                        <span style="font-size:15px;color:#59544f">水洗單寧牛仔外套<br><br></span>
-                        <span style="color:#848378">數量<br><br>
-                        尺寸&nbsp;&nbsp;&nbsp;&nbsp;S<br><br>
-                        顏色
-                        <div class="colorbox"></div>
-                        單價&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;100<br><br></span>
-                    </div>
-
-                    <div style="margin-top: -29px; margin-left: 96px">
-                        <span style="color: #110b0a"><p>小計&nbsp;&nbsp;10,000</p></span>
-                    </div>
-                    
-                </div>
-
+            <div class="plusandminus">
+              <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+              <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+              <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+            </div>
+            <div style="margin-top: 35px; margin-left: 65px">
+              <p>$&nbsp;10,000</p>
+            </div>
+          </div>
+          <div class="mobile_text">
+            <div>
+              <span style="font-size:15px;color:#59544f">水洗單寧牛仔外套<br><br></span>
+              <span style="color:#848378">數量<br><br>
+                尺寸&nbsp;&nbsp;&nbsp;&nbsp;S<br><br>
+                顏色
+                <div class="colorbox"></div>
+                單價&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;100<br><br>
+              </span>
+            </div>
+            <div style="margin-top: -29px; margin-left: 96px">
+              <span style="color: #110b0a"><p>小計&nbsp;&nbsp;10,000</p></span>
+            </div>
+          </div>
         </div>
-        
-        <div class="plusandminus">
-            <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
-            <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
-            <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+
+        <div class="product_list" id="prolist">
+          <input type="image" src="images/cross.png" width="10px" id="close0" class="cross">
+          <img src="images/女裝長袖.jpg" class="pro_img"/>
+          <div class="web_text">
+            <div style="width: 150px;">
+              水洗單寧牛仔外套<br><br>
+              尺寸&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顏色&nbsp;
+              <div class="colorbox"></div>
+              單價&nbsp;&nbsp;$<div class="unitprice">100</div>
+            </div>
+            <div class="plusandminus">
+              <input type='button' value='-' style="font-size:15px; color: #848378;" id='minus' class='qtyminus'/>
+              <input type='text' value='1' style='color:#59544f;' id='number' class='qty' />
+              <input type='button' value='+' style="color: #848378;" id='plus' class='qtyplus'/>
+            </div>
+            <div style="margin-top: 35px; margin-left: 65px">
+              <p>$&nbsp;10,000</p>
+            </div>
+          </div>
+          <div class="mobile_text">
+            <div>
+              <span style="font-size:15px;color:#59544f">水洗單寧牛仔外套<br><br></span>
+              <span style="color:#848378">數量<br><br>
+                尺寸&nbsp;&nbsp;&nbsp;&nbsp;S<br><br>
+                顏色
+                <div class="colorbox"></div>
+                單價&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;100<br><br>
+              </span>
+            </div>
+            <div style="margin-top: -29px; margin-left: 96px">
+              <span style="color: #110b0a"><p>小計&nbsp;&nbsp;10,000</p></span>
+            </div>
+          </div>
         </div>
 
         <div class="clearfix">
